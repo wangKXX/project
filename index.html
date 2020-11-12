@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta http-equiv="pragma" content="no-cache" />
+    <meta http-equiv="Cache-Control" content="no-cache, must-revalidate" />
+    <meta http-equiv="expires" content="-1" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes"
+    />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="white" />
+    <meta name="format-detection" content="telephone=no" />
+    <title>注册会员</title>
+    <base href="http://dawan.nttdatawechat.com/" />
+    <link href="static/css/m.css" rel="stylesheet" type="text/css" />
+    <link
+      href="static/css/wall.css?1605065166"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script type="text/javascript" src="static/js/jquery.js"></script>
+    <script type="text/javascript" src="static/js/global_input.js"></script>
+    <script type="text/javascript" src="static/js/global.js"></script>
+    <script
+      type="text/javascript"
+      src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"
+    ></script>
+  </head>
+  <body>
+    <link
+      href="static/dawan/style.css?1605065166"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <div class="reg_lv">
+      <a href="http://dawan.nttdatawechat.com/index.php/dawan/hd_reg2/1/">
+        <img src="static/dawan/register-card.png" class="img_v" />
+        <span>绑定现有会员卡</span>
+      </a>
+      <a href="http://dawan.nttdatawechat.com/index.php/dawan/hd_reg1/1/">
+        <img src="static/dawan/register-card.png" class="img_v" />
+        <span>注册成为新会员</span>
+      </a>
+    </div>
+    <div id="m_light_bg" style="display: none"></div>
+    <div style="display: none" id="wx_share_title">注册会员</div>
+    <div style="display: none" id="wx_share_content"></div>
+    <script type="text/javascript">
+      wx.config({
+        appId: "wxf6eb9ff0c3c99270",
+        timestamp: 1605065167,
+        nonceStr: "9ad321944442f541",
+        signature: "9dbe11114dbee39705876e5df7e51d0061beb91e",
+        jsApiList: [
+          "onMenuShareTimeline",
+          "onMenuShareAppMessage",
+          "onMenuShareQQ",
+          "onMenuShareWeibo",
+          "showOptionMenu",
+          "hideMenuItems",
+          "previewImage"
+        ]
+      });
+      wx.ready(function () {
+        wx.hideOptionMenu();
+        set_wx_share();
+        if (typeof wx_ready === "function") wx_ready();
+      });
+
+      function set_wx_share() {
+        wx.onMenuShareTimeline({
+          title: $("#wx_share_title").html(),
+          link: "http://dawan.nttdatawechat.com/index.php/dawan/hd_reg/1/",
+          imgUrl: "",
+          success: function () {
+            if (typeof wx_share_f === "function") wx_share_f();
+          },
+          cancel: function () {}
+        });
+        wx.onMenuShareAppMessage({
+          title: $("#wx_share_title").html(),
+          desc: $("#wx_share_content").html(),
+          link: "http://dawan.nttdatawechat.com/index.php/dawan/hd_reg/1/",
+          imgUrl: "",
+          type: "link",
+          dataUrl: "",
+          success: function () {
+            if (typeof wx_share_f === "function") wx_share_f();
+          },
+          cancel: function () {}
+        });
+        wx.onMenuShareQQ({
+          title: $("#wx_share_title").html(),
+          desc: $("#wx_share_content").html(),
+          link: "http://dawan.nttdatawechat.com/index.php/dawan/hd_reg/1/",
+          imgUrl: "",
+          type: "link",
+          dataUrl: "",
+          success: function () {
+            if (typeof wx_share_f === "function") wx_share_f();
+          },
+          cancel: function () {}
+        });
+        wx.onMenuShareWeibo({
+          title: $("#wx_share_title").html(),
+          desc: $("#wx_share_content").html(),
+          link: "http://dawan.nttdatawechat.com/index.php/dawan/hd_reg/1/",
+          imgUrl: "",
+          type: "link",
+          dataUrl: "",
+          success: function () {
+            if (typeof wx_share_f === "function") wx_share_f();
+          },
+          cancel: function () {}
+        });
+      }
+
+      $(function () {
+        if ($("#top_msg").length > 0 && $("#top_msg").is(":visible")) {
+          $("#m_light_bg").show();
+        }
+        $("#m_light_bg, #top_msg").click(function () {
+          if ($("#notc").length > 0 && $("#notc").val() == "1") {
+          } else {
+            $("#m_light_bg").hide();
+            $("#top_msg").hide();
+          }
+        });
+        if ($(".bottom_menu").length > 0) {
+          $("input, select, textarea")
+            .focus(function () {
+              $(".bottom_menu").hide();
+            })
+            .blur(function () {
+              $(".bottom_menu").show();
+            });
+        }
+      });
+    </script>
+    <input
+      type="hidden"
+      id="cal_se_url"
+      value="http://dawan.nttdatawechat.com/index.php/home/cal/"
+    />
+    <input type="hidden" id="cal_id" />
+    <input type="hidden" id="cal_is_mob" value="1" />
+    <div id="cal_se_div" style="display: none"></div>
+    <div id="cal_se_bg" style="display: none"></div>
+  </body>
+</html>
