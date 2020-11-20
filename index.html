@@ -2,8 +2,8 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
     <meta http-equiv="pragma" content="no-cache" />
     <meta http-equiv="Cache-Control" content="no-cache, must-revalidate" />
     <meta http-equiv="expires" content="-1" />
@@ -15,40 +15,27 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="white" />
     <meta name="format-detection" content="telephone=no" />
     <title>注册会员</title>
-    <base href="http://dawan.nttdatawechat.com/" />
-    <link href="static/css/m.css" rel="stylesheet" type="text/css" />
-    <link
-      href="static/css/wall.css?1605065166"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <script type="text/javascript" src="static/js/jquery.js"></script>
-    <script type="text/javascript" src="static/js/global_input.js"></script>
-    <script type="text/javascript" src="static/js/global.js"></script>
+    <script src="http://g.tbcdn.cn/mtb/lib-flexible/0.3.2/??flexible_css.js,flexible.js"></script>
+    <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+    <link rel="stylesheet" href="./css/animate.min.css">
+    <link href="css/index.css" rel="stylesheet" type="text/css" />
     <script
       type="text/javascript"
       src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"
     ></script>
   </head>
   <body>
-    <link
-      href="static/dawan/style.css?1605065166"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <div class="reg_lv">
-      <a href="http://dawan.nttdatawechat.com/index.php/dawan/hd_reg2/1/">
-        <img src="static/dawan/register-card.png" class="img_v" />
-        <span>绑定现有会员卡</span>
-      </a>
-      <a href="http://dawan.nttdatawechat.com/index.php/dawan/hd_reg1/1/">
-        <img src="static/dawan/register-card.png" class="img_v" />
-        <span>注册成为新会员</span>
-      </a>
+    <div class="content-wrap">
+      <div class="content-text">
+        <img src="images/01/header.png" >
+      </div>
+      <div class="index-content">
+        <div class="index-content-left"></div>
+        <div class="index-content-right"></div>
+      </div>
+      <div class="content-start"></div>
+      <button class="open">现在开启</button>
     </div>
-    <div id="m_light_bg" style="display: none"></div>
-    <div style="display: none" id="wx_share_title">注册会员</div>
-    <div style="display: none" id="wx_share_content"></div>
     <script type="text/javascript">
       wx.config({
         appId: "wxf6eb9ff0c3c99270",
@@ -120,25 +107,12 @@
       }
 
       $(function () {
-        if ($("#top_msg").length > 0 && $("#top_msg").is(":visible")) {
-          $("#m_light_bg").show();
-        }
-        $("#m_light_bg, #top_msg").click(function () {
-          if ($("#notc").length > 0 && $("#notc").val() == "1") {
-          } else {
-            $("#m_light_bg").hide();
-            $("#top_msg").hide();
-          }
+        $(".open").click(function() {
+          $(".index-content-left").addClass("left-open");
+          $(".index-content-right").addClass("right-open");
+          $(this).hide();
+          $(".content-text").fadeOut(1000);
         });
-        if ($(".bottom_menu").length > 0) {
-          $("input, select, textarea")
-            .focus(function () {
-              $(".bottom_menu").hide();
-            })
-            .blur(function () {
-              $(".bottom_menu").show();
-            });
-        }
       });
     </script>
     <input
