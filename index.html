@@ -17,7 +17,7 @@
     <title>注册会员</title>
     <script src="http://g.tbcdn.cn/mtb/lib-flexible/0.3.2/??flexible_css.js,flexible.js"></script>
     <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
-    <link rel="stylesheet" href="./css/animate.min.css">
+    <link rel="stylesheet" href="./css/animate.min.css" />
     <link href="css/index.css" rel="stylesheet" type="text/css" />
     <script
       type="text/javascript"
@@ -27,13 +27,22 @@
   <body>
     <div class="content-wrap">
       <div class="content-text">
-        <img src="images/01/header.png" >
+        <img src="images/01/header.png" />
       </div>
       <div class="index-content">
         <div class="index-content-left"></div>
         <div class="index-content-right"></div>
       </div>
-      <div class="content-start"></div>
+      <div class="content-start content-start-hide">
+        <div class="content-start-inner">
+          <a href="login.html">
+            <img src="images/02/login.png" />
+          </a>
+          <a href="#">
+            <img src="images/02/rej.png" />
+          </a>
+        </div>
+      </div>
       <button class="open">现在开启</button>
     </div>
     <script type="text/javascript">
@@ -107,11 +116,17 @@
       }
 
       $(function () {
-        $(".open").click(function() {
+        $(".open").click(function () {
           $(".index-content-left").addClass("left-open");
           $(".index-content-right").addClass("right-open");
           $(this).hide();
-          $(".content-text").fadeOut(1000);
+          $(".content-text").fadeOut(1000, function(){
+            $(".content-start").removeClass("content-start-hide");
+          });
+          setTimeout(function() {
+            $(".index-content").addClass("z-index0");
+          }, 2000)
+          
         });
       });
     </script>
