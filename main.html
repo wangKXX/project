@@ -1,42 +1,539 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"> 
-    <link rel="stylesheet" href="./css/animate.min.css"> 
-    <link rel="stylesheet" href="./css/main.min.css"> 
-    <script src="http://g.tbcdn.cn/mtb/lib-flexible/0.3.2/??flexible_css.js,flexible.js"></script>
-    <title>test</title>
-  </head>
-  <body>
-    <div class="swiper-container">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide blue-slide swiper-slide-active" style="width: 888px;">
-          <p class="ani  fadeInUp animated" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s" swiper-animate-style-cache=" " style="visibility: visible;animation-duration:0.5s;-webkit-animation-duration:0.5s;animation-delay:0.3s;-webkit-animation-delay:0.3s;">从下往上出现的内容</p>
-        </div>
-        <div class="swiper-slide red-slide swiper-slide-next" style="width: 888px;">
-          <p class="ani" swiper-animate-effect="bounceInLeft" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s" swiper-animate-style-cache=" " style="visibility: hidden;">从左至右出现的内容</p>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" href="./css/animate.min.css">
+  <link rel="stylesheet" href="./css/main.min.css">
+  <script src="http://g.tbcdn.cn/mtb/lib-flexible/0.3.2/??flexible_css.js,flexible.js"></script>
+  <script type="text/javascript" src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+  <title></title>
+</head>
+
+<body>
+  <header>
+    <img src="images/01/logo.png" />
+  </header>
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide index-slide swiper-slide-active">
+        <div class="wrap bg1">
+          <div class="bg1-inner">
+            <p class="ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="0.7s"
+              swiper-animate-delay="0.3s">
+              2015年5月15日，</p>
+            <p class="ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="0.7s"
+              swiper-animate-delay="0.5s">
+              上海新世界大丸百货正式开业，</p>
+            <p class="ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="0.7s"
+              swiper-animate-delay="0.7s">
+              我们的故事，</p>
+            <p class="ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="0.7s"
+              swiper-animate-delay="0.9s">
+              即将从这里开始...</p>
+          </div>
         </div>
       </div>
+
+      <div class="swiper-slide red-slide swiper-slide-next">
+        <div class="wrap bg2">
+          <div class="person-wrap">
+            <div class="person ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="0.7s"
+              swiper-animate-delay="1s">
+              <img src="./images/05/man.png" />
+              <!-- <img src="./images/05/women.png"/> 女性显示-->
+            </div>
+          </div>
+          <div class="bg1-inner">
+            <p class="ani" swiper-animate-effect="fadeInRight" swiper-animate-duration="0.7s"
+              swiper-animate-delay="0.2s">
+              20xx年x月x日，</p>
+            <p class="ani" swiper-animate-effect="fadeInRight" swiper-animate-duration="0.7s"
+              swiper-animate-delay="0.4s">
+              是个浪漫的日子。</p>
+            <p class="ani" swiper-animate-effect="fadeInRight" swiper-animate-duration="0.7s"
+              swiper-animate-delay="0.6s">
+              这一天，</p>
+            <p class="ani" swiper-animate-effect="fadeInRight" swiper-animate-duration="0.7s"
+              swiper-animate-delay="0.8s">
+              你注册成为了新世界大丸百货会员。</p>
+            <p class="ani" swiper-animate-effect="fadeInRight" swiper-animate-duration="0.7s" swiper-animate-delay="1s">
+              从此，我的世界里，开始有了你的名字。</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="swiper-slide red-slide swiper-slide-next">
+        <div class="wrap bg3">
+          <!--家具服饰-->
+          <!-- <div class="type-wrap">
+            <div class="type"></div>
+          </div> -->
+          <!--生活童婴-->
+          <!-- <div class="type-wrap">
+            <div class="type family"></div>
+          </div> -->
+          <!--办公体育-->
+          <!-- <div class="type-wrap">
+            <div class="type sport"></div>
+          </div> -->
+          <!--珠宝-->
+          <div class="type-wrap">
+            <div class="type zhubao"></div>
+          </div>
+          <div class="bg1-inner">
+            <p class="ani" swiper-animate-effect="fadeInRight" swiper-animate-duration="0.7s"
+              swiper-animate-delay="0.2s">
+              我还记得呢，</p>
+            <p class="ani" swiper-animate-effect="fadeInRight" swiper-animate-duration="0.7s"
+              swiper-animate-delay="0.4s">
+              注册会员后你购买的第一件商品是xxx，</p>
+            <p class="ani" swiper-animate-effect="fadeInRight" swiper-animate-duration="0.7s"
+              swiper-animate-delay="0.6s">
+              花费xxx元。</p>
+            <p class="ani" swiper-animate-effect="fadeInRight" swiper-animate-duration="0.7s"
+              swiper-animate-delay="0.8s">
+              我悄悄在你卡里存下了xx积分，</p>
+            <p class="ani" swiper-animate-effect="fadeInRight" swiper-animate-duration="0.7s" swiper-animate-delay="1s">
+              不知道有没有被发现～</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="swiper-slide index-slide swiper-slide-active birthday">
+        <div class="wrap bg4">
+          <div class="bg1-inner">
+            <p class="ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="0.7s"
+              swiper-animate-delay="0.3s">
+              x月x日， </p>
+            <p class="ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="0.7s"
+              swiper-animate-delay="0.5s">
+              你有没有收到我送出的生日短信祝福呢？</p>
+            <p class="ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="0.7s"
+              swiper-animate-delay="0.7s">
+              真心希望每年的这一天，</p>
+            <p class="ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="0.7s"
+              swiper-animate-delay="0.9s">
+              你都能被开心、幸福围绕，</p>
+            <p class="ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="0.7s" swiper-animate-delay="1s">
+              也希望以后的每一个生日，</p>
+            <p class="ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="0.7s"
+              swiper-animate-delay="1.2s">
+              我都能陪你一起度过。</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="swiper-slide index-slide swiper-slide-active">
+        <div class="wrap bg5">
+          <div class="bg1-inner">
+            <p class="ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="0.7s"
+              swiper-animate-delay="0.3s">
+              我知道，你最喜欢买服饰和护肤品啦！ </p>
+            <p class="ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="0.7s"
+              swiper-animate-delay="0.5s">
+              所以经常准备多多的折扣优惠，</p>
+            <p class="ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="0.7s"
+              swiper-animate-delay="0.7s">
+              希望你能买的开心，买的尽兴！</p>
+            <p class="ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="0.7s"
+              swiper-animate-delay="0.9s">
+              买太多拿不动的话也不用担心哦，</p>
+            <p class="ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="0.7s" swiper-animate-delay="1s">
+              我有市区送货服务，</p>
+            <p class="ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="0.7s"
+              swiper-animate-delay="1.2s">
+              能帮你送货回家！</p>
+          </div>
+        </div>
+      </div>
+
+      <!---无消费会员-->
+      <div class="swiper-slide index-slide swiper-slide-active qiche">
+        <div class="wrap bg6">
+          <div class="bg1-inner">
+            <p class="ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="0.7s"
+              swiper-animate-delay="0.3s">
+              不知道是不是你平时太忙了， </p>
+            <p class="ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="0.7s"
+              swiper-animate-delay="0.5s">
+              几乎很少有时间来看我。</p>
+            <p class="ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="0.7s"
+              swiper-animate-delay="0.7s">
+              但是再忙也要注意休息和放松哦， </p>
+            <p class="ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="0.7s"
+              swiper-animate-delay="0.9s">
+              有空来新世界大丸百货逛逛吧，</p>
+            <p class="ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="0.7s" swiper-animate-delay="1s">
+              我准备了超多折扣和优惠，</p>
+            <p class="ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="0.7s"
+              swiper-animate-delay="1.2s">
+              等你奥！</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="swiper-slide red-slide swiper-slide-next">
+        <div class="wrap bg7">
+          <!--男-->
+          <!-- <div class="type-wrap">
+            <div class="type man"></div>
+          </div> -->
+          <!--女-->
+          <div class="type-wrap">
+            <div class="type woman"></div>
+          </div>
+          <div class="bg1-inner">
+            <p class="ani" swiper-animate-effect="fadeInRight" swiper-animate-duration="0.7s"
+              swiper-animate-delay="0.2s">
+              在我们认识的x年里，</p>
+            <p class="ani" swiper-animate-effect="fadeInRight" swiper-animate-duration="0.7s"
+              swiper-animate-delay="0.4s">
+              你累计消费了xxx元，</p>
+            <p class="ani" swiper-animate-effect="fadeInRight" swiper-animate-duration="0.7s"
+              swiper-animate-delay="0.6s">
+              超过了xx%的新世界大丸百货会员。 </p>
+            <p class="ani" swiper-animate-effect="fadeInRight" swiper-animate-duration="0.7s"
+              swiper-animate-delay="0.8s">
+              审美超棒又土豪的你，</p>
+            <!-- <p class="ani" swiper-animate-effect="fadeInRight" swiper-animate-duration="0.7s" swiper-animate-delay="1s">
+                一定是个精致又帅气的男神吧！</p> -->
+            <p class="ani" swiper-animate-effect="fadeInRight" swiper-animate-duration="0.7s" swiper-animate-delay="1s">
+              生活里一定是个精致又美丽的仙女吧！</p>
+          </div>
+        </div>
+      </div>
+      <!--无消费-->
+      <div class="swiper-slide red-slide swiper-slide-next">
+        <div class="wrap bg7">
+          <!--男-->
+          <!-- <div class="type-wrap">
+            <div class="type man"></div>
+          </div> -->
+          <!--女-->
+          <div class="type-wrap">
+            <div class="type woman"></div>
+          </div>
+          <div class="bg1-inner">
+            <p class="ani" swiper-animate-effect="fadeInRight" swiper-animate-duration="0.7s"
+              swiper-animate-delay="0.2s">
+              在我们认识的x年里，</p>
+            <p class="ani" swiper-animate-effect="fadeInRight" swiper-animate-duration="0.7s"
+              swiper-animate-delay="0.4s">
+              我经常会想，</p>
+            <p class="ani" swiper-animate-effect="fadeInRight" swiper-animate-duration="0.7s"
+              swiper-animate-delay="0.6s">
+              你会钟情怎样的购物体验呢？ </p>
+            <p class="ani" swiper-animate-effect="fadeInRight" swiper-animate-duration="0.7s"
+              swiper-animate-delay="0.8s">
+              是精致美丽的衣服，时尚高端的护肤彩妆，</p>
+            <p class="ani" swiper-animate-effect="fadeInRight" swiper-animate-duration="0.7s" swiper-animate-delay="1s">
+              还是奢华高贵的包袋手表？</p>
+            <p class="ani" swiper-animate-effect="fadeInRight" swiper-animate-duration="0.7s" swiper-animate-delay="1s">
+              我期待了解你，给你更好的服务，</p>
+            <p class="ani" swiper-animate-effect="fadeInRight" swiper-animate-duration="0.7s" swiper-animate-delay="1s">
+              让你满意。</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="swiper-slide index-slide swiper-slide-active">
+        <div class="wrap bg8">
+          <div class="bg1-inner">
+            <p class="ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="0.7s"
+              swiper-animate-delay="0.3s">
+              超有智慧头脑的你，</p>
+            <p class="ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="0.7s"
+              swiper-animate-delay="0.5s">
+              还是个深藏不露的省钱高手呢！</p>
+            <p class="ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="0.7s"
+              swiper-animate-delay="0.7s">
+              加入新世界大丸百货会员以来，</p>
+            <p class="ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="0.7s"
+              swiper-animate-delay="0.9s">
+              你累计节约了xxx元。</p>
+            <p class="ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="0.7s" swiper-animate-delay="1s">
+              看来我存在你卡包里的积分和优惠券</p>
+            <p class="ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="0.7s"
+              swiper-animate-delay="1.2s">
+              一点都没有浪费呢！</p>
+            <p class="ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="0.7s"
+              swiper-animate-delay="1.4s">
+              真棒！</p>
+          </div>
+        </div>
+      </div>
+      <!--无消费-->
+      <div class="swiper-slide index-slide swiper-slide-active">
+        <div class="wrap bg8">
+          <div class="bg1-inner">
+            <p class="ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="0.7s"
+              swiper-animate-delay="0.3s">
+              你知道吗，</p>
+            <p class="ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="0.7s"
+              swiper-animate-delay="0.5s">
+              每次在新世界大丸百货消费后，</p>
+            <p class="ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="0.7s"
+              swiper-animate-delay="0.7s">
+              我都会为你存上一笔积分呢，</p>
+            <p class="ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="0.7s"
+              swiper-animate-delay="0.9s">
+              可以用于支付抵现、停车减免，</p>
+            <p class="ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="0.7s" swiper-animate-delay="1s">
+              还有多多的优惠券， 都在你会员卡包里藏着哦！</p>
+            <p class="ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="0.7s"
+              swiper-animate-delay="1.2s">
+              还不快去看看！</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="swiper-slide index-slide swiper-slide-active">
+        <div class="wrap bg9">
+          <div class="bg1-inner">
+            <p class="ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="0.7s"
+              swiper-animate-delay="0.3s">
+              你知道吗,</p>
+            <p class="ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="0.7s"
+              swiper-animate-delay="0.5s">
+              你的会员积分已经累计达到xxx，</p>
+            <p class="ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="0.7s"
+              swiper-animate-delay="0.7s">
+              这些积分相当于xxx元现金哦！</p>
+            <p class="ani margin" swiper-animate-effect="fadeInLeft" swiper-animate-duration="0.7s"
+              swiper-animate-delay="0.9s">
+              我希望与你的每一次相聚里，</p>
+            <p class="ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="0.7s" swiper-animate-delay="1s">
+              都能留下一些惊喜，</p>
+            <p class="ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="0.7s"
+              swiper-animate-delay="1.2s">
+              也许只是微不足道的点滴,</p>
+            <p class="ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="0.7s"
+              swiper-animate-delay="1.4s">
+              却也能平添生活里的小开心。</p>
+          </div>
+        </div>
+      </div>
+      <!--无消费-->
+      <div class="swiper-slide index-slide swiper-slide-active">
+        <div class="wrap bg9">
+          <div class="bg1-inner">
+            <p class="ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="0.7s"
+              swiper-animate-delay="0.3s">
+              购买到一定金额的话，</p>
+            <p class="ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="0.7s"
+              swiper-animate-delay="0.5s">
+              你还可以解锁专属购物管家、</p>
+            <p class="ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="0.7s"
+              swiper-animate-delay="0.7s">
+              VIP贵宾休息室、奢侈品专项会员价、</p>
+            <p class="ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="0.7s"
+              swiper-animate-delay="0.9s">
+              包裹寄存、儿童照看等超多服务哦！</p>
+            <p class="ani margin" swiper-animate-effect="fadeInLeft" swiper-animate-duration="0.7s"
+              swiper-animate-delay="1s">
+              我希望与你的每一次相聚里，</p>
+            <p class="ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="0.7s"
+              swiper-animate-delay="1.2s">
+              都能留下一些惊喜，</p>
+            <p class="ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="0.7s"
+              swiper-animate-delay="1.4s">
+              也许只是微不足道的点滴,</p>
+            <p class="ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="0.7s"
+              swiper-animate-delay="1.6s">
+              却也能平添生活里的小开心。</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="swiper-slide red-slide swiper-slide-next">
+        <div class="wrap bg10">
+          <div class="person-wrap">
+            <div class="person ani" swiper-animate-effect="zoomIn" swiper-animate-duration="0.7s"
+              swiper-animate-delay="0.5s">
+            </div>
+          </div>
+          <div class="person-wrap">
+            <div class="woman ani" swiper-animate-effect="zoomIn" swiper-animate-duration="0.7s"
+              swiper-animate-delay="0.8s">
+            </div>
+          </div>
+          <div class="bg2-inner">
+            <p class="ani" swiper-animate-effect="fadeInRight" swiper-animate-duration="0.7s"
+              swiper-animate-delay="0.2s">
+              2020</p>
+            <p class="ani" swiper-animate-effect="fadeInRight" swiper-animate-duration="0.7s"
+              swiper-animate-delay="0.4s">
+              新世界大丸百货走过五年岁月</p>
+            <p class="ani" swiper-animate-effect="fadeInRight" swiper-animate-duration="0.7s"
+              swiper-animate-delay="0.6s">
+              然而我们的故事</p>
+            <p class="ani" swiper-animate-effect="fadeInRight" swiper-animate-duration="0.7s"
+              swiper-animate-delay="0.8s">
+              仍然未完待续</p>
+            <p class="ani margin" swiper-animate-effect="fadeInRight" swiper-animate-duration="0.7s"
+              swiper-animate-delay="1s">
+              这里有你和朋友的开心欢聚</p>
+            <p class="ani" swiper-animate-effect="fadeInRight" swiper-animate-duration="0.7s" swiper-animate-delay="1s">
+              有你和家人的脉脉温馨</p>
+            <p class="ani" swiper-animate-effect="fadeInRight" swiper-animate-duration="0.7s" swiper-animate-delay="1s">
+              有你一个人逛街的潇洒自在</p>
+            <p class="ani" swiper-animate-effect="fadeInRight" swiper-animate-duration="0.7s" swiper-animate-delay="1s">
+              也有你每一次的欢乐与惊喜</p>
+          </div>
+
+          <div class="bg1-inner">
+            <p class="ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="0.7s"
+              swiper-animate-delay="0.2s">
+              新的一年即将来临 </p>
+            <p class="ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="0.7s"
+              swiper-animate-delay="0.4s">
+              在这里 </p>
+            <p class="ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="0.7s"
+              swiper-animate-delay="0.6s">
+              祝你拥有满满的快乐与幸福 </p>
+            <p class="ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="0.7s"
+              swiper-animate-delay="0.8s">
+              也希望我能为你带去更多</p>
+            <p class="ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="0.7s" swiper-animate-delay="1s">
+              生活的丰富与精彩！</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="swiper-slide index-slide swiper-slide-active">
+        <div class="wrap bg11">
+          <div class="text">
+            <p class="ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.7s" swiper-animate-delay="0.3s">
+              <img src="images/18/text.png" /></p>
+          </div>
+          <div class="success"></div>
+          <div class="button">
+            <button class="lingqu"></button>
+          </div>
+        </div>
+      </div>
+
+      <audio src="" loop class="shenri" style="display: none;" preload="auto"></audio>
+      <audio src="" loop class="qiche-audio" style="display: none;" preload="auto"></audio>.
+    </div>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"> </script>
     <script src="./js/jquery-1.11.3.min.js"> </script>
     <script src="./js/swiper.animate1.0.3.min.js"> </script>
-    <script> 
+    <script>
+      wx.config({
+        appId: "wxf6eb9ff0c3c99270",
+        timestamp: 1605065167,
+        nonceStr: "9ad321944442f541",
+        signature: "9dbe11114dbee39705876e5df7e51d0061beb91e",
+        jsApiList: [
+          "onMenuShareTimeline",
+          "onMenuShareAppMessage",
+          "onMenuShareQQ",
+          "onMenuShareWeibo",
+          "showOptionMenu",
+          "hideMenuItems",
+          "previewImage"
+        ]
+      });
+      wx.ready(function () {
+        document.querySelector(".shenri").src = "./mp3/1.mp3";
+        document.querySelector(".qiche-audio").src = "./mp3/2.mp3";
+        wx.hideOptionMenu();
+        set_wx_share();
+        if (typeof wx_ready === "function") wx_ready();
+      });
+
+      function set_wx_share() {
+        wx.onMenuShareTimeline({
+          title: $("#wx_share_title").html(),
+          link: "http://dawan.nttdatawechat.com/index.php/dawan/hd_reg/1/",
+          imgUrl: "",
+          success: function () {
+            if (typeof wx_share_f === "function") wx_share_f();
+          },
+          cancel: function () { }
+        });
+        wx.onMenuShareAppMessage({
+          title: $("#wx_share_title").html(),
+          desc: $("#wx_share_content").html(),
+          link: "http://dawan.nttdatawechat.com/index.php/dawan/hd_reg/1/",
+          imgUrl: "",
+          type: "link",
+          dataUrl: "",
+          success: function () {
+            if (typeof wx_share_f === "function") wx_share_f();
+          },
+          cancel: function () { }
+        });
+        wx.onMenuShareQQ({
+          title: $("#wx_share_title").html(),
+          desc: $("#wx_share_content").html(),
+          link: "http://dawan.nttdatawechat.com/index.php/dawan/hd_reg/1/",
+          imgUrl: "",
+          type: "link",
+          dataUrl: "",
+          success: function () {
+            if (typeof wx_share_f === "function") wx_share_f();
+          },
+          cancel: function () { }
+        });
+        wx.onMenuShareWeibo({
+          title: $("#wx_share_title").html(),
+          desc: $("#wx_share_content").html(),
+          link: "http://dawan.nttdatawechat.com/index.php/dawan/hd_reg/1/",
+          imgUrl: "",
+          type: "link",
+          dataUrl: "",
+          success: function () {
+            if (typeof wx_share_f === "function") wx_share_f();
+          },
+          cancel: function () { }
+        });
+      }
       //Swiper5
-        var mySwiper = new Swiper ('.swiper-container', {
-          direction : 'vertical',
-          on:{
-            init: function(){
-              swiperAnimateCache(this);
-              swiperAnimate(this);
-            }, 
-            slideChangeTransitionEnd: function(){ 
-              swiperAnimate(this);
-            } 
-          }
-        }) 
-        </script>
-  </body>
+      var mySwiper = new Swiper('.swiper-container', {
+        direction: 'vertical',
+        lazyLoading: true,//懒
+        lazyLoadingInPrevNext: true,//懒
+        lazyLoadingInPrevNextAmount: 3,//提前两张加载
+        on: {
+          init: function () {
+            swiperAnimateCache(this);
+            swiperAnimate(this);
+          },
+          slideChangeTransitionStart: function () {
+            if (!document.querySelector(".shenri").paused) {
+              document.querySelector(".shenri").pause();
+
+            }
+            if (!document.querySelector(".qiche-audio").paused) {
+              document.querySelector(".qiche-audio").pause();
+
+            }
+          },
+          slideChangeTransitionEnd: function () {
+            swiperAnimate(this);
+            if ($(this.slides[this.activeIndex]).hasClass("birthday")) {
+              document.querySelector(".shenri").play();
+            }
+            if ($(this.slides[this.activeIndex]).hasClass("qiche")) {
+              document.querySelector(".qiche-audio").play();
+            }
+          },
+
+        }
+      })
+      $(function () {
+        $(".lingqu").click(function () {
+          $(".button").fadeOut();
+          $(".success").fadeIn();
+        });
+      })
+    </script>
+</body>
+
 </html>

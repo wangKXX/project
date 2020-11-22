@@ -1,23 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-    <script src="http://g.tbcdn.cn/mtb/lib-flexible/0.3.2/??flexible_css.js,flexible.js"></script>
-    <link href="css/login.css" rel="stylesheet" type="text/css" />
-    <title>登录</title>
-  </head>
-  <body>
-    <div class="login">
-      <div class="login-inner">
-        <div class="title"></div>
-        <input type="password" placeholder="初始密码为身份证后六位"/>
-        <div class="tips"></div>
-        <div class="button"></div>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <script src="http://g.tbcdn.cn/mtb/lib-flexible/0.3.2/??flexible_css.js,flexible.js"></script>∏
+  <script type="text/javascript" src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+  <link href="css/login.css" rel="stylesheet" type="text/css" />
+  <title>登录</title>
+</head>
+
+<body>
+  <header>
+    <img src="images/01/logo.png" />
+  </header>
+  <div class="login">
+    <div class="login-inner">
+      <div class="title">
+        <img src="images/03/title.png" />
+      </div>
+      <input type="password" placeholder="初始密码为身份证后六位" id="pwd" />
+      <div class="error"></div>
+      <div class="tips">
+        <img src="images/03/tips.png" />
+      </div>
+      <div class="button">
+        <img src="images/03/button.png" />
       </div>
     </div>
-    <script src="./js/jquery-1.11.3.min.js"></script>
-    <script></script>
-  </body>
+  </div>
+  <script src="./js/jquery-1.11.3.min.js"></script>
+  <script>
+    wx.config({
+      appId: "wxf6eb9ff0c3c99270",
+      timestamp: 1605065167,
+      nonceStr: "9ad321944442f541",
+      signature: "9dbe11114dbee39705876e5df7e51d0061beb91e",
+      jsApiList: [
+        "onMenuShareTimeline",
+        "onMenuShareAppMessage",
+        "onMenuShareQQ",
+        "onMenuShareWeibo",
+        "showOptionMenu",
+        "hideMenuItems",
+        "previewImage"
+      ]
+    });
+    wx.ready(function () {
+      wx.hideOptionMenu();
+      set_wx_share();
+      if (typeof wx_ready === "function") wx_ready();
+    });
+
+    function set_wx_share() {
+      wx.onMenuShareTimeline({
+        title: $("#wx_share_title").html(),
+        link: "http://dawan.nttdatawechat.com/index.php/dawan/hd_reg/1/",
+        imgUrl: "",
+        success: function () {
+          if (typeof wx_share_f === "function") wx_share_f();
+        },
+        cancel: function () { }
+      });
+      wx.onMenuShareAppMessage({
+        title: $("#wx_share_title").html(),
+        desc: $("#wx_share_content").html(),
+        link: "http://dawan.nttdatawechat.com/index.php/dawan/hd_reg/1/",
+        imgUrl: "",
+        type: "link",
+        dataUrl: "",
+        success: function () {
+          if (typeof wx_share_f === "function") wx_share_f();
+        },
+        cancel: function () { }
+      });
+      wx.onMenuShareQQ({
+        title: $("#wx_share_title").html(),
+        desc: $("#wx_share_content").html(),
+        link: "http://dawan.nttdatawechat.com/index.php/dawan/hd_reg/1/",
+        imgUrl: "",
+        type: "link",
+        dataUrl: "",
+        success: function () {
+          if (typeof wx_share_f === "function") wx_share_f();
+        },
+        cancel: function () { }
+      });
+      wx.onMenuShareWeibo({
+        title: $("#wx_share_title").html(),
+        desc: $("#wx_share_content").html(),
+        link: "http://dawan.nttdatawechat.com/index.php/dawan/hd_reg/1/",
+        imgUrl: "",
+        type: "link",
+        dataUrl: "",
+        success: function () {
+          if (typeof wx_share_f === "function") wx_share_f();
+        },
+        cancel: function () { }
+      });
+    }
+    $(function () {
+      $(".button").click(function () {
+        if ($("#pwd").val()) {
+          location.href = "main.html"
+        } else {
+          $(".error").text("请输入密码！");
+        }
+
+      });
+    });
+  </script>
+</body>
+
 </html>
