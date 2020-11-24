@@ -10,10 +10,75 @@
   <link rel="stylesheet" href="./css/main.min.css">
   <script src="http://g.tbcdn.cn/mtb/lib-flexible/0.3.2/??flexible_css.js,flexible.js"></script>
   <script type="text/javascript" src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"> </script>
+    <script src="./js/jquery-1.11.3.min.js"> </script>
+    <script src="./js/swiper.animate1.0.3.min.js"> </script>
+  <script type="text/javascript">
+  $(".loding").show();
+   function prevImage(src) {
+     return new Promise(function(res, rej) {
+       var image = new Image();
+       image.onload = function() {
+         res(true);
+       };
+       image.onerror = function() {
+         rej(false);
+       }
+       image.src = src;
+     });
+   }
+   var prvImages = [
+     "./images/05/man.png",
+     "./images/04/bg.gif",
+     "./images/05/bg.png",
+     "./images/17/bg.gif",
+     "./images/17/person.png",
+     "./images/17/woman.png",
+     "./images/07/bg.gif",
+     "./images/07/01.png",
+     "./images/06/fushi.png",
+     "./images/07/family.png",
+     "./images/08/sport.png",
+     "./images/09/zhubao.png",
+     "./images/10/bg.gif",
+     "./images/13/bg.gif",
+     "./images/15/bg.gif",
+     "./images/18/bg.gif",
+     "./images/18/success.png",
+     "./images/18/lingqu.png",
+     "./images/18/bg2.gif",
+     "./images/18/bg3.gif",
+     "./images/11/bg1.gif",
+     "./images/11/bg2.gif",
+     "./images/12/bg.gif",
+     "./images/07/01.png",
+     "./images/12/man.png",
+     "./images/12/woman.png"
+   ]
+   $('.loading-bar').css('width',"50%");
+   Promise.all(prvImages.map(function(src) {
+     return prevImage(src);
+   })).then(function() {
+     $(".loding").hide();
+     $('.loading-bar').css('width',"100%");
+   });
+  </script>
   <title></title>
 </head>
 
 <body>
+  <div class="loding">
+    <div class="loader loader-17">
+      <div class="css-square square1"></div>
+      <div class="css-square square2"></div>
+      <div class="css-square square3"></div>
+      <div class="css-square square4"></div>
+      <div class="css-square square5"></div>
+      <div class="css-square square6"></div>
+      <div class="css-square square7"></div>
+      <div class="css-square square8"></div>
+    </div>
+  </div>
   <header>
     <img src="images/01/logo.png" />
   </header>
@@ -420,9 +485,6 @@
       <audio src="" loop class="shenri" style="display: none;" preload="auto"></audio>
       <audio src="" loop class="qiche-audio" style="display: none;" preload="auto"></audio>.
     </div>
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"> </script>
-    <script src="./js/jquery-1.11.3.min.js"> </script>
-    <script src="./js/swiper.animate1.0.3.min.js"> </script>
     <script>
       wx.config({
         appId: "wxf6eb9ff0c3c99270",

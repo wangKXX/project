@@ -37,7 +37,7 @@ html {
         .person {
           width: 100%;
           height: 100%;
-          img{
+          img {
             width: 100%;
           }
         }
@@ -92,15 +92,15 @@ html {
           padding: 0.526667rem;
           background: rgba($color: #fff, $alpha: 0.6);
           z-index: 3;
-          .margin{
+          .margin {
             margin-top: 0.166667rem;
           }
         }
       }
 
-      .bg3{
+      .bg3 {
         background: url(../images/07/bg.gif) no-repeat;
-        .type-wrap{
+        .type-wrap {
           position: absolute;
           top: 0;
           left: 0;
@@ -111,21 +111,21 @@ html {
           background-size: 100% 100%;
           -webkit-animation: bling 2s infinite;
           animation: bling 2s infinite;
-          .type{
+          .type {
             width: 100%;
             height: 100%;
             background: url(../images/06/fushi.png) no-repeat;
             background-size: 100% 100%;
           }
-          .family{
+          .family {
             background: url(../images/07/family.png) no-repeat;
             background-size: 100% 100%;
           }
-          .sport{
+          .sport {
             background: url(../images/08/sport.png) no-repeat;
             background-size: 100% 100%;
           }
-          .zhubao{
+          .zhubao {
             background: url(../images/09/zhubao.png) no-repeat;
             background-size: 100% 100%;
           }
@@ -140,7 +140,7 @@ html {
         }
       }
 
-      .bg4{
+      .bg4 {
         background: url(../images/10/bg.gif) no-repeat;
         .bg1-inner {
           position: absolute;
@@ -151,7 +151,7 @@ html {
         }
       }
 
-      .bg8{
+      .bg8 {
         background: url(../images/13/bg.gif) no-repeat;
         .bg1-inner {
           position: absolute;
@@ -161,7 +161,7 @@ html {
           background: rgba($color: #fff, $alpha: 0.6);
         }
       }
-      .bg9{
+      .bg9 {
         background: url(../images/15/bg.gif) no-repeat;
         .bg1-inner {
           position: absolute;
@@ -169,14 +169,14 @@ html {
           right: 0;
           padding: 0.526667rem;
           background: rgba($color: #fff, $alpha: 0.6);
-          .margin{
+          .margin {
             margin-top: 0.166667rem;
           }
         }
       }
-      .bg11{
+      .bg11 {
         background: url(../images/18/bg.gif) no-repeat;
-        .success{
+        .success {
           width: 8.693333rem;
           bottom: 1.533333rem;
           position: absolute;
@@ -187,7 +187,7 @@ html {
           background-size: 100% 100%;
           display: none;
         }
-        .button{
+        .button {
           width: 8.693333rem;
           bottom: 1.533333rem;
           position: absolute;
@@ -196,7 +196,7 @@ html {
           height: 5.6rem;
           background: url(../images/18/lingqu.png) no-repeat;
           background-size: 100% 100%;
-          .lingqu{
+          .lingqu {
             position: absolute;
             bottom: 0;
             width: 3.546667rem;
@@ -207,7 +207,7 @@ html {
             z-index: 3;
           }
         }
-        .bg11-1{
+        .bg11-1 {
           position: absolute;
           top: 0;
           left: 0;
@@ -216,7 +216,7 @@ html {
           background: url(../images/18/bg2.gif) no-repeat;
           background-size: 100% 100%;
         }
-        .bg11-2{
+        .bg11-2 {
           position: absolute;
           top: 0;
           left: 0;
@@ -238,7 +238,7 @@ html {
         // }
       }
 
-      .bg5{
+      .bg5 {
         background: url(../images/11/bg1.gif) no-repeat;
         .bg1-inner {
           position: absolute;
@@ -248,7 +248,7 @@ html {
           background: rgba($color: #fff, $alpha: 0.6);
         }
       }
-      .bg6{
+      .bg6 {
         background: url(../images/11/bg2.gif) no-repeat;
         .bg1-inner {
           position: absolute;
@@ -259,10 +259,9 @@ html {
         }
       }
 
-
-      .bg7{
+      .bg7 {
         background: url(../images/12/bg.gif) no-repeat;
-        .type-wrap{
+        .type-wrap {
           position: absolute;
           top: 0;
           left: 0;
@@ -273,13 +272,13 @@ html {
           background-size: 100% 100%;
           -webkit-animation: bling 2s infinite;
           animation: bling 2s infinite;
-          .man{
+          .man {
             width: 100%;
             height: 100%;
             background: url(../images/12/man.png) no-repeat;
             background-size: 100% 100%;
           }
-          .woman{
+          .woman {
             width: 100%;
             height: 100%;
             background: url(../images/12/woman.png) no-repeat;
@@ -309,34 +308,32 @@ html {
 
 @keyframes ani {
   0% {
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%) scale(1.4);
-      width: 30px;
-      height: 30px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1.4);
+    width: 30px;
+    height: 30px;
   }
   30% {
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%) scale(1.3);
-      width: 80px;
-      height: 80px;
-
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1.3);
+    width: 80px;
+    height: 80px;
   }
   70% {
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%) scale(1.2);
-      width: 150px;
-      height: 150px;
-
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1.2);
+    width: 150px;
+    height: 150px;
   }
   100% {
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%) scale(1);
-      width: 240px;
-      height: 240px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    width: 240px;
+    height: 240px;
   }
 }
 
@@ -376,7 +373,7 @@ html {
   }
 }
 
-header{
+header {
   width: 100%;
   height: 1.066667rem;
   text-align: center;
@@ -384,7 +381,61 @@ header{
   top: 0.5rem;
   left: 0;
   z-index: 6;
-  img{
+  img {
     height: 100%;
   }
 }
+
+.loding {
+  width: 100%;
+  height: 100%;
+  background: rgb(192, 222, 224);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+.loader { position: relative; width: 60px; height: 60px; border-radius: 50%; margin: 75px; display: inline-block; vertical-align: middle; }
+.loader-star { position: absolute; top: calc(50% - 12px); }
+/*LOADER-11*/
+    
+.loader-17 .css-square { position: absolute; top: 50%; width: 25px; height: 7px; background: white; box-shadow: 2px 2px 3px 0px black; }
+.loader-17 .square1 { left: 70px; -webkit-animation: dominos 1s 0.125s ease infinite; animation: dominos 1s 0.125s ease infinite; }
+.loader-17 .square2 { left: 60px; -webkit-animation: dominos 1s 0.3s ease infinite; animation: dominos 1s 0.3s ease infinite; }
+.loader-17 .square3 { left: 50px; -webkit-animation: dominos 1s 0.425s ease infinite; animation: dominos 1s 0.425s ease infinite; }
+.loader-17 .square4 { left: 40px; -webkit-animation: dominos 1s 0.540s ease infinite; animation: dominos 1s 0.540s ease infinite; }
+.loader-17 .square5 { left: 30px; -webkit-animation: dominos 1s 0.665s ease infinite; animation: dominos 1s 0.665s ease infinite; }
+.loader-17 .square6 { left: 20px; -webkit-animation: dominos 1s 0.79s ease infinite; animation: dominos 1s 0.79s ease infinite; }
+.loader-17 .square7 { left: 10px; -webkit-animation: dominos 1s 0.9s ease infinite; animation: dominos 1s 0.9s ease infinite; }
+.loader-17 .square8 { left: 0px; -webkit-animation: dominos 1s 1s ease infinite; animation: dominos 1s 1s ease infinite; }
+
+@-webkit-keyframes dominos {
+  50% {
+ opacity: 0.7;
+ }
+  75% {
+ -webkit-transform: rotate(90deg);
+ transform: rotate(90deg);
+ }
+  80% {
+ opacity: 1;
+ }
+ }
+  @keyframes dominos {
+  50% {
+ opacity: 0.7;
+ }
+  75% {
+ -webkit-transform: rotate(90deg);
+ transform: rotate(90deg);
+ }
+  80% {
+ opacity: 1;
+ }
+ }
+ 
+
