@@ -46,6 +46,14 @@ html, body {
   margin-top: 2.533333rem;
 }
 
+.login .login-inner .pwd-txt {
+  width: 1.8rem;
+}
+
+.login .login-inner .pwd-txt img {
+  width: 100%;
+}
+
 .login img {
   width: 100%;
 }

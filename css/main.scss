@@ -11,7 +11,7 @@ html {
       height: 100%;
 
       .bg1 {
-        background: url(../images/04/bg.png) no-repeat;
+        background: url(../images/04/bg.gif) no-repeat;
 
         .bg1-inner {
           position: absolute;
@@ -53,7 +53,7 @@ html {
       }
 
       .bg10 {
-        background: url(../images/17/bg.png) no-repeat;
+        background: url(../images/17/bg.gif) no-repeat;
 
         .person-wrap {
           width: 100%;
@@ -99,7 +99,7 @@ html {
       }
 
       .bg3{
-        background: url(../images/07/bg.png) no-repeat;
+        background: url(../images/07/bg.gif) no-repeat;
         .type-wrap{
           position: absolute;
           top: 0;
@@ -141,7 +141,7 @@ html {
       }
 
       .bg4{
-        background: url(../images/10/bg.png) no-repeat;
+        background: url(../images/10/bg.gif) no-repeat;
         .bg1-inner {
           position: absolute;
           top: 2.226667rem;
@@ -152,7 +152,7 @@ html {
       }
 
       .bg8{
-        background: url(../images/13/bg.png) no-repeat;
+        background: url(../images/13/bg.gif) no-repeat;
         .bg1-inner {
           position: absolute;
           top: 2.226667rem;
@@ -162,7 +162,7 @@ html {
         }
       }
       .bg9{
-        background: url(../images/15/bg.png) no-repeat;
+        background: url(../images/15/bg.gif) no-repeat;
         .bg1-inner {
           position: absolute;
           top: 2.226667rem;
@@ -175,21 +175,21 @@ html {
         }
       }
       .bg11{
-        background: url(../images/18/bg.png) no-repeat;
+        background: url(../images/18/bg.gif) no-repeat;
         .success{
           width: 8.693333rem;
-          bottom: 2.533333rem;
+          bottom: 1.533333rem;
           position: absolute;
           right: 50%;
           margin-right: -4.3466666rem;
-          height: 5rem;
+          height: 5.6rem;
           background: url(../images/18/success.png) no-repeat;
           background-size: 100% 100%;
           display: none;
         }
         .button{
           width: 8.693333rem;
-          bottom: 2.533333rem;
+          bottom: 1.533333rem;
           position: absolute;
           right: 50%;
           margin-right: -4.3466666rem;
@@ -207,21 +207,39 @@ html {
             z-index: 3;
           }
         }
-        .text {
+        .bg11-1{
           position: absolute;
-          width: 7.866667rem;
-          top: 2.226667rem;
-          right: 50%;
-          margin-right: -3.933333rem;
-          img{
-            width: 100%;
-            animation: bling 2s infinite;
-          }
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background: url(../images/18/bg2.gif) no-repeat;
+          background-size: 100% 100%;
         }
+        .bg11-2{
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background: url(../images/18/bg3.gif) no-repeat;
+          background-size: 100% 100%;
+        }
+        // .text {
+        //   position: absolute;
+        //   width: 7.866667rem;
+        //   top: 2.226667rem;
+        //   right: 50%;
+        //   margin-right: -3.933333rem;
+        //   img{
+        //     width: 100%;
+        //     animation: bling 2s infinite;
+        //   }
+        // }
       }
 
       .bg5{
-        background: url(../images/11/bg1.png) no-repeat;
+        background: url(../images/11/bg1.gif) no-repeat;
         .bg1-inner {
           position: absolute;
           top: 2.226667rem;
@@ -231,7 +249,7 @@ html {
         }
       }
       .bg6{
-        background: url(../images/11/bg2.png) no-repeat;
+        background: url(../images/11/bg2.gif) no-repeat;
         .bg1-inner {
           position: absolute;
           top: 2.226667rem;
@@ -243,7 +261,7 @@ html {
 
 
       .bg7{
-        background: url(../images/12/bg.png) no-repeat;
+        background: url(../images/12/bg.gif) no-repeat;
         .type-wrap{
           position: absolute;
           top: 0;

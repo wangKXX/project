@@ -25,19 +25,16 @@
     <header>
       <img src="images/01/logo.png" />
     </header>
-    <div class="content-text">
-      <img src="images/01/header.png" />
-    </div>
     <div class="index-content">
       <div class="index-content-left"></div>
       <div class="index-content-right"></div>
     </div>
     <div class="content-start content-start-hide">
-      <div class="content-start-inner">
+      <div class="content-start-inner animated" id="content-start-inner">
         <a href="login.html">
           <img src="images/02/login.png" />
         </a>
-        <a href="#">
+        <a href="http://dawan.nttdatawechat.com/index.php/dawan/hd/1/">
           <img src="images/02/rej.png" />
         </a>
       </div>
@@ -119,12 +116,11 @@
         $(".index-content-left").addClass("left-open");
         $(".index-content-right").addClass("right-open");
         $(this).hide();
-        $(".content-text").fadeOut(1000, function () {
-          $(".content-start").removeClass("content-start-hide");
-        });
+        $(".content-start").removeClass("content-start-hide");
+        $(".content-start-inner").addClass("zoomIn")
         setTimeout(function () {
           $(".index-content").addClass("z-index0");
-        }, 2000)
+        }, 1500)
 
       });
     });

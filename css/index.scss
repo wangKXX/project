@@ -26,6 +26,12 @@ html {
           }
         }
       }
+      #content-start-inner{
+        -webkit-animate-duration: 2s !important;
+        animate-duration: 2s !important;
+        -webkit-animate-delay: 2s !important;
+        animate-delay: 2s !important;
+      }
       img {
         width: 100%;
       }
@@ -65,12 +71,10 @@ html {
     overflow: hidden;
     z-index: 1;
     display: flex;
-    -webkit-animation: bling 2s infinite;
-    animation: bling 2s infinite;
     .index-content-left {
       flex: 1;
       height: 100%;
-      background: url(../images/01/bg.png) no-repeat;
+      background: url(../images/01/bg.gif) no-repeat;
       transition: all 3s ease-in-out;
       transform-origin: left center;
       background-attachment: fixed;
@@ -79,7 +83,7 @@ html {
     .index-content-right {
       flex: 1;
       height: 100%;
-      background: url(../images/01/bg.png) no-repeat;
+      background: url(../images/01/bg.gif) no-repeat;
       transition: all 3s ease-in-out;
       transform-origin: right center;
       background-attachment: fixed;

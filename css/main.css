@@ -17,7 +17,7 @@ html .swiper-container .swiper-slide {
 
 body .swiper-container .swiper-slide .bg1,
 html .swiper-container .swiper-slide .bg1 {
-  background: url(../images/04/bg.png) no-repeat;
+  background: url(../images/04/bg.gif) no-repeat;
 }
 
 body .swiper-container .swiper-slide .bg1 .bg1-inner,
@@ -67,7 +67,7 @@ html .swiper-container .swiper-slide .bg2 .bg1-inner {
 
 body .swiper-container .swiper-slide .bg10,
 html .swiper-container .swiper-slide .bg10 {
-  background: url(../images/17/bg.png) no-repeat;
+  background: url(../images/17/bg.gif) no-repeat;
 }
 
 body .swiper-container .swiper-slide .bg10 .person-wrap,
@@ -123,7 +123,7 @@ html .swiper-container .swiper-slide .bg10 .bg2-inner .margin {
 
 body .swiper-container .swiper-slide .bg3,
 html .swiper-container .swiper-slide .bg3 {
-  background: url(../images/07/bg.png) no-repeat;
+  background: url(../images/07/bg.gif) no-repeat;
 }
 
 body .swiper-container .swiper-slide .bg3 .type-wrap,
@@ -178,7 +178,7 @@ html .swiper-container .swiper-slide .bg3 .bg1-inner {
 
 body .swiper-container .swiper-slide .bg4,
 html .swiper-container .swiper-slide .bg4 {
-  background: url(../images/10/bg.png) no-repeat;
+  background: url(../images/10/bg.gif) no-repeat;
 }
 
 body .swiper-container .swiper-slide .bg4 .bg1-inner,
@@ -192,7 +192,7 @@ html .swiper-container .swiper-slide .bg4 .bg1-inner {
 
 body .swiper-container .swiper-slide .bg8,
 html .swiper-container .swiper-slide .bg8 {
-  background: url(../images/13/bg.png) no-repeat;
+  background: url(../images/13/bg.gif) no-repeat;
 }
 
 body .swiper-container .swiper-slide .bg8 .bg1-inner,
@@ -206,7 +206,7 @@ html .swiper-container .swiper-slide .bg8 .bg1-inner {
 
 body .swiper-container .swiper-slide .bg9,
 html .swiper-container .swiper-slide .bg9 {
-  background: url(../images/15/bg.png) no-repeat;
+  background: url(../images/15/bg.gif) no-repeat;
 }
 
 body .swiper-container .swiper-slide .bg9 .bg1-inner,
@@ -225,17 +225,17 @@ html .swiper-container .swiper-slide .bg9 .bg1-inner .margin {
 
 body .swiper-container .swiper-slide .bg11,
 html .swiper-container .swiper-slide .bg11 {
-  background: url(../images/18/bg.png) no-repeat;
+  background: url(../images/18/bg.gif) no-repeat;
 }
 
 body .swiper-container .swiper-slide .bg11 .success,
 html .swiper-container .swiper-slide .bg11 .success {
   width: 8.693333rem;
-  bottom: 2.533333rem;
+  bottom: 1.533333rem;
   position: absolute;
   right: 50%;
   margin-right: -4.3466666rem;
-  height: 5rem;
+  height: 5.6rem;
   background: url(../images/18/success.png) no-repeat;
   background-size: 100% 100%;
   display: none;
@@ -244,7 +244,7 @@ html .swiper-container .swiper-slide .bg11 .success {
 body .swiper-container .swiper-slide .bg11 .button,
 html .swiper-container .swiper-slide .bg11 .button {
   width: 8.693333rem;
-  bottom: 2.533333rem;
+  bottom: 1.533333rem;
   position: absolute;
   right: 50%;
   margin-right: -4.3466666rem;
@@ -265,24 +265,31 @@ html .swiper-container .swiper-slide .bg11 .button .lingqu {
   z-index: 3;
 }
 
-body .swiper-container .swiper-slide .bg11 .text,
-html .swiper-container .swiper-slide .bg11 .text {
+body .swiper-container .swiper-slide .bg11 .bg11-1,
+html .swiper-container .swiper-slide .bg11 .bg11-1 {
   position: absolute;
-  width: 7.866667rem;
-  top: 2.226667rem;
-  right: 50%;
-  margin-right: -3.933333rem;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(../images/18/bg2.gif) no-repeat;
+  background-size: 100% 100%;
 }
 
-body .swiper-container .swiper-slide .bg11 .text img,
-html .swiper-container .swiper-slide .bg11 .text img {
+body .swiper-container .swiper-slide .bg11 .bg11-2,
+html .swiper-container .swiper-slide .bg11 .bg11-2 {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  animation: bling 2s infinite;
+  height: 100%;
+  background: url(../images/18/bg3.gif) no-repeat;
+  background-size: 100% 100%;
 }
 
 body .swiper-container .swiper-slide .bg5,
 html .swiper-container .swiper-slide .bg5 {
-  background: url(../images/11/bg1.png) no-repeat;
+  background: url(../images/11/bg1.gif) no-repeat;
 }
 
 body .swiper-container .swiper-slide .bg5 .bg1-inner,
@@ -296,7 +303,7 @@ html .swiper-container .swiper-slide .bg5 .bg1-inner {
 
 body .swiper-container .swiper-slide .bg6,
 html .swiper-container .swiper-slide .bg6 {
-  background: url(../images/11/bg2.png) no-repeat;
+  background: url(../images/11/bg2.gif) no-repeat;
 }
 
 body .swiper-container .swiper-slide .bg6 .bg1-inner,
@@ -310,7 +317,7 @@ html .swiper-container .swiper-slide .bg6 .bg1-inner {
 
 body .swiper-container .swiper-slide .bg7,
 html .swiper-container .swiper-slide .bg7 {
-  background: url(../images/12/bg.png) no-repeat;
+  background: url(../images/12/bg.gif) no-repeat;
 }
 
 body .swiper-container .swiper-slide .bg7 .type-wrap,
