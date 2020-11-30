@@ -399,43 +399,231 @@ header {
   z-index: 10;
 }
 
-.loader { position: relative; width: 60px; height: 60px; border-radius: 50%; margin: 75px; display: inline-block; vertical-align: middle; }
-.loader-star { position: absolute; top: calc(50% - 12px); }
+.loader {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin: 75px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.loader-star {
+  position: absolute;
+  top: calc(50% - 12px);
+}
 /*LOADER-11*/
-    
-.loader-17 .css-square { position: absolute; top: 50%; width: 25px; height: 7px; background: white; box-shadow: 2px 2px 3px 0px black; }
-.loader-17 .square1 { left: 70px; -webkit-animation: dominos 1s 0.125s ease infinite; animation: dominos 1s 0.125s ease infinite; }
-.loader-17 .square2 { left: 60px; -webkit-animation: dominos 1s 0.3s ease infinite; animation: dominos 1s 0.3s ease infinite; }
-.loader-17 .square3 { left: 50px; -webkit-animation: dominos 1s 0.425s ease infinite; animation: dominos 1s 0.425s ease infinite; }
-.loader-17 .square4 { left: 40px; -webkit-animation: dominos 1s 0.540s ease infinite; animation: dominos 1s 0.540s ease infinite; }
-.loader-17 .square5 { left: 30px; -webkit-animation: dominos 1s 0.665s ease infinite; animation: dominos 1s 0.665s ease infinite; }
-.loader-17 .square6 { left: 20px; -webkit-animation: dominos 1s 0.79s ease infinite; animation: dominos 1s 0.79s ease infinite; }
-.loader-17 .square7 { left: 10px; -webkit-animation: dominos 1s 0.9s ease infinite; animation: dominos 1s 0.9s ease infinite; }
-.loader-17 .square8 { left: 0px; -webkit-animation: dominos 1s 1s ease infinite; animation: dominos 1s 1s ease infinite; }
+
+.loader-17 .css-square {
+  position: absolute;
+  top: 50%;
+  width: 25px;
+  height: 7px;
+  background: white;
+  box-shadow: 2px 2px 3px 0px black;
+}
+.loader-17 .square1 {
+  left: 70px;
+  -webkit-animation: dominos 1s 0.125s ease infinite;
+  animation: dominos 1s 0.125s ease infinite;
+}
+.loader-17 .square2 {
+  left: 60px;
+  -webkit-animation: dominos 1s 0.3s ease infinite;
+  animation: dominos 1s 0.3s ease infinite;
+}
+.loader-17 .square3 {
+  left: 50px;
+  -webkit-animation: dominos 1s 0.425s ease infinite;
+  animation: dominos 1s 0.425s ease infinite;
+}
+.loader-17 .square4 {
+  left: 40px;
+  -webkit-animation: dominos 1s 0.54s ease infinite;
+  animation: dominos 1s 0.54s ease infinite;
+}
+.loader-17 .square5 {
+  left: 30px;
+  -webkit-animation: dominos 1s 0.665s ease infinite;
+  animation: dominos 1s 0.665s ease infinite;
+}
+.loader-17 .square6 {
+  left: 20px;
+  -webkit-animation: dominos 1s 0.79s ease infinite;
+  animation: dominos 1s 0.79s ease infinite;
+}
+.loader-17 .square7 {
+  left: 10px;
+  -webkit-animation: dominos 1s 0.9s ease infinite;
+  animation: dominos 1s 0.9s ease infinite;
+}
+.loader-17 .square8 {
+  left: 0px;
+  -webkit-animation: dominos 1s 1s ease infinite;
+  animation: dominos 1s 1s ease infinite;
+}
 
 @-webkit-keyframes dominos {
   50% {
- opacity: 0.7;
- }
+    opacity: 0.7;
+  }
   75% {
- -webkit-transform: rotate(90deg);
- transform: rotate(90deg);
- }
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+  }
   80% {
- opacity: 1;
- }
- }
-  @keyframes dominos {
+    opacity: 1;
+  }
+}
+@keyframes dominos {
   50% {
- opacity: 0.7;
- }
+    opacity: 0.7;
+  }
   75% {
- -webkit-transform: rotate(90deg);
- transform: rotate(90deg);
- }
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+  }
   80% {
- opacity: 1;
- }
- }
- 
+    opacity: 1;
+  }
+}
+.l-v {
+  width: 2rem;
+  position: absolute;
+  img {
+    width: 100%;
+  }
+}
+.fushi1 {
+  top: 0.266667rem;
+  left: 0.266667rem;
+  transform: rotate(7deg);
+  -webkit-transform: rotate(7deg);
+}
+.fushi2 {
+  top: 3.333333rem;
+  left: 3rem;
+  transform: rotate(-7deg);
+  -webkit-transform: rotate(-7deg);
+}
+.other1 {
+  top: 0.266667rem;
+  right: 0.266667rem;
+  transform: rotate(7deg);
+  -webkit-transform: rotate(7deg);
+}
+.other2 {
+  top: 1.333333rem;
+  right: 2rem;
+  transform: rotate(-7deg);
+  -webkit-transform: rotate(-7deg);
+}
+.zhubao1 {
+  top: 1.266667rem;
+  left: 2.266667rem;
+  transform: rotate(7deg);
+  -webkit-transform: rotate(7deg);
+}
+.zhubao2 {
+  top: 1.8rem;
+  left: 4rem;
+  transform: rotate(-7deg);
+  -webkit-transform: rotate(-7deg);
+}
+.yingtong1 {
+  top: 1.266667rem;
+  right: 2.266667rem;
+  transform: rotate(7deg);
+  -webkit-transform: rotate(7deg);
+}
+.yingtong2 {
+  top: 3.333333rem;
+  right: 2rem;
+  transform: rotate(-7deg);
+  -webkit-transform: rotate(-7deg);
+}
+.xiemiao1 {
+  top: 1.266667rem;
+  left: 2.266667rem;
+  transform: rotate(7deg);
+  -webkit-transform: rotate(7deg);
+}
+.xiemiao2 {
+  top: 4.333333rem;
+  left: 4rem;
+  transform: rotate(-7deg);
+  -webkit-transform: rotate(-7deg);
+}
 
+.tiyu1 {
+  top: 1.266667rem;
+  left: 2.266667rem;
+  transform: rotate(7deg);
+  -webkit-transform: rotate(7deg);
+}
+.tiyu2 {
+  top: 3.333333rem;
+  left: 4rem;
+  transform: rotate(-7deg);
+  -webkit-transform: rotate(-7deg);
+}
+.tiyu3 {
+  top: 5.333333rem;
+  right: 0;
+  transform: rotate(-7deg);
+  -webkit-transform: rotate(-7deg);
+}
+.shehuadapai1 {
+  top: 4.266667rem;
+  left: 0;
+  transform: rotate(7deg);
+  -webkit-transform: rotate(7deg);
+}
+.shehuadapai2 {
+  top: 3.333333rem;
+  left: 4rem;
+  transform: rotate(7deg);
+  -webkit-transform: rotate(7deg);
+}
+.shehuadapai3 {
+  top: 5.333333rem;
+  right: 2rem;
+  transform: rotate(7deg);
+  -webkit-transform: rotate(7deg);
+}
+.shehuadapai4 {
+  top: 1.266667rem;
+  left: 4.266667rem;
+  transform: rotate(7deg);
+  -webkit-transform: rotate(7deg);
+}
+.meizhuang1 {
+  top: 0.266667rem;
+  right: 0.266667rem;
+  transform: rotate(14deg);
+  -webkit-transform: rotate(14deg);
+}
+.jiadian1 {
+  top: 6.833333rem;
+  right: 1rem;
+  transform: rotate(10deg);
+  -webkit-transform: rotate(10deg);
+}
+.jiadian2 {
+  top: 4.333333rem;
+  left: 1.5rem;
+  transform: rotate(-10deg);
+  -webkit-transform: rotate(-10deg);
+}
+.bangong1 {
+  top: 1.266667rem;
+  right: 4.266667rem;
+  transform: rotate(14deg);
+  -webkit-transform: rotate(14deg);
+}
+.bangong2 {
+  top: 3.266667rem;
+  right: 2.266667rem;
+  transform: rotate(-14deg);
+  -webkit-transform: rotate(-14deg);
+}

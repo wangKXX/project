@@ -65,3 +65,6 @@ header{
     height: 100%;
   }
 }
+input::-webkit-input-placeholder { /* WebKit browsers */
+  color: rgb(247, 212, 140);
+}

@@ -508,8 +508,8 @@ header img {
 
 .loader-17 .square4 {
   left: 40px;
-  -webkit-animation: dominos 1s 0.540s ease infinite;
-  animation: dominos 1s 0.540s ease infinite;
+  -webkit-animation: dominos 1s 0.54s ease infinite;
+  animation: dominos 1s 0.54s ease infinite;
 }
 
 .loader-17 .square5 {
@@ -560,4 +560,167 @@ header img {
   80% {
     opacity: 1;
   }
+}
+
+.l-v {
+  width: 2rem;
+  position: absolute;
+}
+
+.l-v img {
+  width: 100%;
+}
+
+.fushi1 {
+  top: 0.266667rem;
+  left: 0.266667rem;
+  transform: rotate(7deg);
+  -webkit-transform: rotate(7deg);
+}
+
+.fushi2 {
+  top: 3.333333rem;
+  left: 3rem;
+  transform: rotate(-7deg);
+  -webkit-transform: rotate(-7deg);
+}
+
+.other1 {
+  top: 0.266667rem;
+  right: 0.266667rem;
+  transform: rotate(7deg);
+  -webkit-transform: rotate(7deg);
+}
+
+.other2 {
+  top: 1.333333rem;
+  right: 2rem;
+  transform: rotate(-7deg);
+  -webkit-transform: rotate(-7deg);
+}
+
+.zhubao1 {
+  top: 1.266667rem;
+  left: 2.266667rem;
+  transform: rotate(7deg);
+  -webkit-transform: rotate(7deg);
+}
+
+.zhubao2 {
+  top: 1.8rem;
+  left: 4rem;
+  transform: rotate(-7deg);
+  -webkit-transform: rotate(-7deg);
+}
+
+.yingtong1 {
+  top: 1.266667rem;
+  right: 2.266667rem;
+  transform: rotate(7deg);
+  -webkit-transform: rotate(7deg);
+}
+
+.yingtong2 {
+  top: 3.333333rem;
+  right: 2rem;
+  transform: rotate(-7deg);
+  -webkit-transform: rotate(-7deg);
+}
+
+.xiemiao1 {
+  top: 1.266667rem;
+  left: 2.266667rem;
+  transform: rotate(7deg);
+  -webkit-transform: rotate(7deg);
+}
+
+.xiemiao2 {
+  top: 4.333333rem;
+  left: 4rem;
+  transform: rotate(-7deg);
+  -webkit-transform: rotate(-7deg);
+}
+
+.tiyu1 {
+  top: 1.266667rem;
+  left: 2.266667rem;
+  transform: rotate(7deg);
+  -webkit-transform: rotate(7deg);
+}
+
+.tiyu2 {
+  top: 3.333333rem;
+  left: 4rem;
+  transform: rotate(-7deg);
+  -webkit-transform: rotate(-7deg);
+}
+
+.tiyu3 {
+  top: 5.333333rem;
+  right: 0;
+  transform: rotate(-7deg);
+  -webkit-transform: rotate(-7deg);
+}
+
+.shehuadapai1 {
+  top: 4.266667rem;
+  left: 0;
+  transform: rotate(7deg);
+  -webkit-transform: rotate(7deg);
+}
+
+.shehuadapai2 {
+  top: 3.333333rem;
+  left: 4rem;
+  transform: rotate(7deg);
+  -webkit-transform: rotate(7deg);
+}
+
+.shehuadapai3 {
+  top: 5.333333rem;
+  right: 2rem;
+  transform: rotate(7deg);
+  -webkit-transform: rotate(7deg);
+}
+
+.shehuadapai4 {
+  top: 1.266667rem;
+  left: 4.266667rem;
+  transform: rotate(7deg);
+  -webkit-transform: rotate(7deg);
+}
+
+.meizhuang1 {
+  top: 0.266667rem;
+  right: 0.266667rem;
+  transform: rotate(14deg);
+  -webkit-transform: rotate(14deg);
+}
+
+.jiadian1 {
+  top: 6.833333rem;
+  right: 1rem;
+  transform: rotate(10deg);
+  -webkit-transform: rotate(10deg);
+}
+
+.jiadian2 {
+  top: 4.333333rem;
+  left: 1.5rem;
+  transform: rotate(-10deg);
+  -webkit-transform: rotate(-10deg);
+}
+
+.bangong1 {
+  top: 1.266667rem;
+  right: 4.266667rem;
+  transform: rotate(14deg);
+  -webkit-transform: rotate(14deg);
+}
+
+.bangong2 {
+  top: 3.266667rem;
+  right: 2.266667rem;
+  transform: rotate(-14deg);
+  -webkit-transform: rotate(-14deg);
 }
