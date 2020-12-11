@@ -100,6 +100,7 @@ html .index-content .index-content-left {
   background: url(../images/01/bg.gif) no-repeat;
   transition: all 3s ease-in-out;
   transform-origin: left center;
+  -webkit-transform-origin: left center;
   background-attachment: fixed;
   background-size: 100% 100%;
 }
@@ -111,7 +112,34 @@ html .index-content .index-content-right {
   background: url(../images/01/bg.gif) no-repeat;
   transition: all 3s ease-in-out;
   transform-origin: right center;
+  -webkit-transform-origin: right center;
   background-attachment: fixed;
+  background-size: 100% 100%;
+}
+
+body .index-content .index-content-left:before,
+html .index-content .index-content-left:before {
+  content: " ";
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: url(../images/01/bg.gif) center 0 no-repeat;
+  background-size: 100% 100%;
+}
+
+body .index-content .index-content-right:before,
+html .index-content .index-content-right:before {
+  content: " ";
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: url(../images/01/bg.gif) center 0 no-repeat;
   background-size: 100% 100%;
 }
 
@@ -120,9 +148,35 @@ html .index-content .left-open {
   transform: rotateY(-140deg);
 }
 
+body .index-content .left-open:before,
+html .index-content .left-open:before {
+  background-position: left center;
+  background-size: cover;
+}
+
 body .index-content .right-open,
 html .index-content .right-open {
   transform: rotateY(140deg);
+}
+
+body .index-content .right-open:before,
+html .index-content .right-open:before {
+  background-position: right center;
+  background-size: cover;
+}
+
+body .ios .index-content-left:before,
+html .ios .index-content-left:before {
+  content: "";
+  z-index: -1;
+  display: none;
+}
+
+body .ios .index-content-right:before,
+html .ios .index-content-right:before {
+  content: "";
+  z-index: -1;
+  display: none;
 }
 
 body .z-index0,

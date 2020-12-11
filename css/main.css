@@ -109,7 +109,7 @@ html .swiper-container .swiper-slide .bg10 .bg1-inner {
 body .swiper-container .swiper-slide .bg10 .bg2-inner,
 html .swiper-container .swiper-slide .bg10 .bg2-inner {
   position: absolute;
-  top: 4.213333rem;
+  top: 3.213333rem;
   right: 0;
   padding: 0.526667rem;
   background: rgba(255, 255, 255, 0.6);
@@ -263,6 +263,12 @@ html .swiper-container .swiper-slide .bg11 .button .lingqu {
   margin-left: -1.77333rem;
   opacity: 0;
   z-index: 3;
+}
+
+body .swiper-container .swiper-slide .bg11 .new,
+html .swiper-container .swiper-slide .bg11 .new {
+  background: url(../images/18/new.png) no-repeat;
+  background-size: 100% 100%;
 }
 
 body .swiper-container .swiper-slide .bg11 .bg11-1,

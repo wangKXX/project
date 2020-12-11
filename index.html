@@ -110,12 +110,19 @@
         cancel: function () { }
       });
     }
+    var u = navigator.userAgent;
+    var isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端
 
     $(function () {
+      if (isiOS) {
+        $(".index-content").addClass("ios")
+      }
       $(".open").click(function () {
         $(".index-content-left").addClass("left-open");
         $(".index-content-right").addClass("right-open");
         $(this).hide();
+        $(".index-content-right:before").hide();
+        $(".index-content-left:before").hide();
         $(".content-start").removeClass("content-start-hide");
         $(".content-start-inner").addClass("zoomIn")
         setTimeout(function () {
