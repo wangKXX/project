@@ -13,72 +13,86 @@
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"> </script>
     <script src="./js/jquery-1.11.3.min.js"> </script>
     <script src="./js/swiper.animate1.0.3.min.js"> </script>
-  <!-- <script type="text/javascript">
+    <script src="http://dawan.nttdatawechat.com/loader/resLoader.js"> </script>
+    <style>
+      .progress{
+        width: 5rem;
+    height: 0.2rem;
+	position: relative;
+	left: 0;top: 0;right: 0;bottom: 0;
+  background-color: rgba(100, 100, 100, 0.2);
+  border-radius: 0.1rem;
+  overflow: hidden;
+}
+.progressbar{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 0;
+  height: 100%;
+  border-radius: 0.1rem;
+	background: linear-gradient(to left, rgb(242, 112, 156), rgb(255, 148, 114));
+  box-shadow: 0 3px 3px -5px rgb(242, 112, 156), 0 2px 5px rgb(242, 112, 156);
+	-webkit-transition: width ease-in 200ms;
+}
+.loding{
+  flex-direction: column;
+}
+.loding-txt{
+  font-size: 0.6rem;
+  color: #fff;
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 40px #ff00de, 0 0 70px #ff00de;
+  margin-bottom: 0.6rem;
+}
+    </style>
+  <script type="text/javascript">
   $(".loding").show();
-   function prevImage(src) {
-     return new Promise(function(res, rej) {
-       var image = new Image();
-       image.onload = function() {
-         res(true);
-       };
-       image.onerror = function() {
-         rej(false);
-       }
-       image.src = src;
-     });
-   }
    var prvImages = [
-    //  "./images/05/man.png",
-     "./images/04/bg.gif",
-    //  "./images/05/bg.png",
-     "./images/17/bg.gif",
-    //  "./images/17/person.png",
-    //  "./images/17/woman.png",
-    //  "./images/07/bg.gif",
-    //  "./images/07/01.png",
-    //  "./images/06/fushi.png",
-    //  "./images/07/family.png",
-    //  "./images/08/sport.png",
-    //  "./images/09/zhubao.png",
-    //  "./images/10/bg.gif",
-    //  "./images/13/bg.gif",
-    //  "./images/15/bg.gif",
-    //  "./images/18/bg.gif",
-    //  "./images/18/success.png",
-    //  "./images/18/lingqu.png",
-    //  "./images/18/bg2.gif",
-    //  "./images/18/bg3.gif",
-    //  "./images/11/bg1.gif",
-    //  "./images/11/bg2.gif",
-    //  "./images/12/bg.gif",
-    //  "./images/07/01.png",
-    //  "./images/12/man.png",
-    //  "./images/12/woman.png"
+   "./images/11/bg2.gif",
+   "./images/11/bg1.gif",
+  "./images/13/bg.gif",
+  "./images/13/bg.gif",
+  "./images/15/bg.gif",
+  "./images/01/bg.gif",
+  "./images/10/bg.gif"
+
    ]
-   $('.loading-bar').css('width',"50%");
-   Promise.all(prvImages.map(function(src) {
-     return prevImage(src);
-   })).then(function() {
-     $(".loding").hide();
-     $('.loading-bar').css('width',"100%");
-   });
-  </script> -->
+   $('.loding-txt').text("2015");
+   var loader = new resLoader({
+	resources : prvImages,
+	onStart : function(total){
+		console.log('start:'+total);
+	},
+	onProgress : function(current, total){
+    var percent = current/total*100;
+    $('.loding-txt').text( Math.floor(100 / (100 - percent)) + 2015);
+    console.log(Math.floor(100 / (100 - percent)) + 2015)
+		$('.progressbar').css('width', percent+'%');
+	},
+	onComplete : function(total){
+    // $(".loding").hide();
+    $('.loding-txt').text(2020);
+	}
+});
+
+loader.start();
+
+  </script>
   <title></title>
 </head>
 
 <body>
-  <!-- <div class="loding">
-    <div class="loader loader-17">
-      <div class="css-square square1"></div>
-      <div class="css-square square2"></div>
-      <div class="css-square square3"></div>
-      <div class="css-square square4"></div>
-      <div class="css-square square5"></div>
-      <div class="css-square square6"></div>
-      <div class="css-square square7"></div>
-      <div class="css-square square8"></div>
+  <div class="loding">
+    <div class="loding-txt">生成中</div>
+    <div class="progress">
+      <div class="progressbar"></div>
+      <div class="progresstext">
+        <span class="current" style="display: none;"></span>
+        <span class="total" style="display: none;"></span>
+      </div>
     </div>
-  </div> -->
+    
+  </div>
   <header>
     <img src="images/01/logo.png"/>
   </header>
