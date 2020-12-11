@@ -13,7 +13,7 @@
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"> </script>
     <script src="./js/jquery-1.11.3.min.js"> </script>
     <script src="./js/swiper.animate1.0.3.min.js"> </script>
-  <script type="text/javascript">
+  <!-- <script type="text/javascript">
   $(".loding").show();
    function prevImage(src) {
      return new Promise(function(res, rej) {
@@ -62,12 +62,12 @@
      $(".loding").hide();
      $('.loading-bar').css('width',"100%");
    });
-  </script>
+  </script> -->
   <title></title>
 </head>
 
 <body>
-  <div class="loding">
+  <!-- <div class="loding">
     <div class="loader loader-17">
       <div class="css-square square1"></div>
       <div class="css-square square2"></div>
@@ -78,14 +78,14 @@
       <div class="css-square square7"></div>
       <div class="css-square square8"></div>
     </div>
-  </div>
+  </div> -->
   <header>
-    <img src="images/01/logo.png" />
+    <img src="images/01/logo.png"/>
   </header>
   <div class="swiper-container">
     <div class="swiper-wrapper">
       <div class="swiper-slide index-slide swiper-slide-active">
-        <div class="wrap bg1">
+        <div class="wrap bg1 swiper-lazy" data-background="./images/04/bg.png">
           <div class="bg1-inner">
             <p class="ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="0.7s"
               swiper-animate-delay="0.3s">
@@ -104,12 +104,12 @@
       </div>
 
       <div class="swiper-slide red-slide swiper-slide-next">
-        <div class="wrap bg2">
+        <div class="wrap bg2 swiper-lazy" data-background="./images/05/bg.png">
           <div class="person-wrap">
             <div class="person ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="0.7s"
               swiper-animate-delay="1s">
-              <img src="./images/05/man.png" />
-              <!-- <img src="./images/05/women.png"/> 女性显示-->
+              <img data-src="./images/05/man.png" class="swiper-lazy"/>
+              <!-- <img data-src="./images/05/women.png" class="swiper-lazy"/> 女性显示-->
             </div>
           </div>
           <div class="bg1-inner">
@@ -132,22 +132,22 @@
       </div>
 
       <div class="swiper-slide red-slide swiper-slide-next">
-        <div class="wrap bg3">
+        <div class="wrap bg3 swiper-lazy" data-background="./images/07/bg.png">
           <!--家具服饰-->
-          <!-- <div class="type-wrap">
-            <div class="type"></div>
+          <!-- <div class="type-wrap swiper-lazy" data-background="./images/07/01.png">
+            <div class="type swiper-lazy" data-background="./images/06/fushi.png"></div>
           </div> -->
           <!--生活童婴-->
-          <!-- <div class="type-wrap">
-            <div class="type family"></div>
+          <!-- <div class="type-wrap swiper-lazy" data-background="./images/07/01.png">
+            <div class="type family swiper-lazy" data-background="./images/07/family.png"></div>
           </div> -->
           <!--办公体育-->
-          <!-- <div class="type-wrap">
-            <div class="type sport"></div>
+          <!-- <div class="type-wrap swiper-lazy" data-background="./images/07/01.png">
+            <div class="type sport swiper-lazy" data-background="./images/08/sport.png"></div>
           </div> -->
           <!--珠宝-->
-          <div class="type-wrap">
-            <div class="type zhubao"></div>
+          <div class="type-wrap swiper-lazy" data-background="./images/07/01.png">
+            <div class="type zhubao swiper-lazy" data-background="./images/09/zhubao.png"></div>
           </div>
           <div class="bg1-inner">
             <p class="ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="0.7s"
@@ -170,6 +170,7 @@
 
       <div class="swiper-slide index-slide swiper-slide-active birthday">
         <div class="wrap bg4">
+          <img data-src="./images/10/bg.gif" class="swiper-lazy">
           <div class="bg1-inner">
             <p class="ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="0.7s"
               swiper-animate-delay="0.3s">
@@ -194,17 +195,18 @@
 
       <div class="swiper-slide index-slide swiper-slide-active qiche">
         <div class="wrap bg6">
+          <img data-src="./images/11/bg2.gif" class="swiper-lazy"/>
           <!--服装类-->
           <div class="l-v fushi1">
             <div class="person ani" swiper-animate-effect="zoomIn" swiper-animate-duration="0.7s"
               swiper-animate-delay="0.5s">
-              <img src="./images/11/fushi/1.png" />
+              <img data-src="./images/11/fushi/1.png" class="swiper-lazy"/>
             </div>
           </div>
           <div class="l-v fushi2">
             <div class="ani" swiper-animate-effect="zoomIn" swiper-animate-duration="0.7s"
               swiper-animate-delay="0.8s">
-              <img src="./images/11/fushi/2.png" />
+              <img data-src="./images/11/fushi/2.png" class="swiper-lazy"/>
             </div>
           </div>
 
@@ -212,13 +214,13 @@
           <div class="l-v other1">
             <div class="person ani" swiper-animate-effect="zoomIn" swiper-animate-duration="0.7s"
               swiper-animate-delay="0.5s">
-              <img src="./images/11/shenghuoriyong/1.png" />
+              <img data-src="./images/11/shenghuoriyong/1.png" class="swiper-lazy"/>
             </div>
           </div>
           <div class="l-v other2">
             <div class="ani" swiper-animate-effect="zoomIn" swiper-animate-duration="0.7s"
               swiper-animate-delay="0.8s">
-              <img src="./images/11/shenghuoriyong/2.png" />
+              <img data-src="./images/11/shenghuoriyong/2.png" class="swiper-lazy"/>
             </div>
           </div>
 
@@ -226,13 +228,13 @@
           <div class="l-v bangong1">
             <div class="person ani" swiper-animate-effect="zoomIn" swiper-animate-duration="0.7s"
               swiper-animate-delay="0.5s">
-              <img src="./images/11/bangong/1.png" />
+              <img data-src="./images/11/bangong/1.png" class="swiper-lazy"/>
             </div>
           </div>
           <div class="l-v bangong2">
             <div class="ani" swiper-animate-effect="zoomIn" swiper-animate-duration="0.7s"
               swiper-animate-delay="0.8s">
-              <img src="./images/11/bangong/2.png" />
+              <img data-src="./images/11/bangong/2.png" class="swiper-lazy"/>
             </div>
           </div>
 
@@ -240,13 +242,13 @@
           <div class="l-v jiadian1">
             <div class="person ani" swiper-animate-effect="zoomIn" swiper-animate-duration="0.7s"
               swiper-animate-delay="0.5s">
-              <img src="./images/11/jiadian/1.png" />
+              <img data-src="./images/11/jiadian/1.png" class="swiper-lazy"/>
             </div>
           </div>
           <div class="l-v jiadian2">
             <div class="ani" swiper-animate-effect="zoomIn" swiper-animate-duration="0.7s"
               swiper-animate-delay="0.8s">
-              <img src="./images/11/jiadian/2.png" />
+              <img data-src="./images/11/jiadian/2.png" class="swiper-lazy"/>
             </div>
           </div>
 
@@ -254,7 +256,7 @@
           <div class="l-v meizhuang1">
             <div class="person ani" swiper-animate-effect="zoomIn" swiper-animate-duration="0.7s"
               swiper-animate-delay="0.5s">
-              <img src="./images/11/meizhuang/1.png" />
+              <img data-src="./images/11/meizhuang/1.png" class="swiper-lazy"/>
             </div>
           </div>
 
@@ -262,25 +264,25 @@
           <div class="l-v shehuadapai1">
             <div class="person ani" swiper-animate-effect="zoomIn" swiper-animate-duration="0.7s"
               swiper-animate-delay="0.5s">
-              <img src="./images/11/shehuadapai/1.png" />
+              <img data-src="./images/11/shehuadapai/1.png" class="swiper-lazy"/>
             </div>
           </div>
           <div class="l-v shehuadapai2">
             <div class="ani" swiper-animate-effect="zoomIn" swiper-animate-duration="0.7s"
               swiper-animate-delay="0.8s">
-              <img src="./images/11/shehuadapai/2.png" />
+              <img data-src="./images/11/shehuadapai/2.png" class="swiper-lazy"/>
             </div>
           </div>
           <div class="l-v shehuadapai3">
             <div class="person ani" swiper-animate-effect="zoomIn" swiper-animate-duration="0.7s"
               swiper-animate-delay="0.5s">
-              <img src="./images/11/shehuadapai/3.png" />
+              <img data-src="./images/11/shehuadapai/3.png" class="swiper-lazy"/>
             </div>
           </div>
           <div class="l-v shehuadapai4">
             <div class="person ani" swiper-animate-effect="zoomIn" swiper-animate-duration="0.7s"
               swiper-animate-delay="0.5s">
-              <img src="./images/11/shehuadapai/4.png" />
+              <img data-src="./images/11/shehuadapai/4.png" class="swiper-lazy"/>
             </div>
           </div>
 
@@ -288,19 +290,19 @@
           <div class="l-v tiyu1">
             <div class="person ani" swiper-animate-effect="zoomIn" swiper-animate-duration="0.7s"
               swiper-animate-delay="0.5s">
-              <img src="./images/11/tiyu/1.png" />
+              <img data-src="./images/11/tiyu/1.png" class="swiper-lazy"/>
             </div>
           </div>
           <div class="l-v tiyu2">
             <div class="ani" swiper-animate-effect="zoomIn" swiper-animate-duration="0.7s"
               swiper-animate-delay="0.8s">
-              <img src="./images/11/tiyu/2.png" />
+              <img data-src="./images/11/tiyu/2.png" class="swiper-lazy"/>
             </div>
           </div>
           <div class="l-v tiyu3">
             <div class="person ani" swiper-animate-effect="zoomIn" swiper-animate-duration="0.7s"
               swiper-animate-delay="0.5s">
-              <img src="./images/11/tiyu/3.png" />
+              <img data-src="./images/11/tiyu/3.png" class="swiper-lazy"/>
             </div>
           </div>
 
@@ -308,13 +310,13 @@
            <div class="l-v xiemiao1">
             <div class="person ani" swiper-animate-effect="zoomIn" swiper-animate-duration="0.7s"
               swiper-animate-delay="0.5s">
-              <img src="./images/11/xiemao/1.png" />
+              <img data-src="./images/11/xiemao/1.png" class="swiper-lazy"/>
             </div>
           </div>
           <div class="l-v xiemiao2">
             <div class="ani" swiper-animate-effect="zoomIn" swiper-animate-duration="0.7s"
               swiper-animate-delay="0.8s">
-              <img src="./images/11/xiemao/2.png" />
+              <img data-src="./images/11/xiemao/2.png" class="swiper-lazy"/>
             </div>
           </div>
 
@@ -322,13 +324,13 @@
           <div class="l-v yingtong1">
             <div class="person ani" swiper-animate-effect="zoomIn" swiper-animate-duration="0.7s"
               swiper-animate-delay="0.5s">
-              <img src="./images/11/yingtong/1.png" />
+              <img data-src="./images/11/yingtong/1.png" class="swiper-lazy"/>
             </div>
           </div>
           <div class="l-v yingtong2">
             <div class="ani" swiper-animate-effect="zoomIn" swiper-animate-duration="0.7s"
               swiper-animate-delay="0.8s">
-              <img src="./images/11/yingtong/2.png" />
+              <img data-src="./images/11/yingtong/2.png" class="swiper-lazy"/>
             </div>
           </div>
 
@@ -336,13 +338,13 @@
           <div class="l-v zhubao1">
             <div class="person ani" swiper-animate-effect="zoomIn" swiper-animate-duration="0.7s"
               swiper-animate-delay="0.5s">
-              <img src="./images/11/zhubao/1.png" />
+              <img data-src="./images/11/zhubao/1.png" class="swiper-lazy"/>
             </div>
           </div>
           <div class="l-v zhubao2">
             <div class="ani" swiper-animate-effect="zoomIn" swiper-animate-duration="0.7s"
               swiper-animate-delay="0.8s">
-              <img src="./images/11/zhubao/2.png" />
+              <img data-src="./images/11/zhubao/2.png" class="swiper-lazy"/>
             </div>
           </div>
 
@@ -371,6 +373,7 @@
       <!---无消费会员-->
       <div class="swiper-slide index-slide swiper-slide-active">
         <div class="wrap bg5">
+          <img data-src="./images/11/bg1.gif" class="swiper-lazy"/>
           <div class="bg1-inner">
             <p class="ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="0.7s"
               swiper-animate-delay="0.3s">
@@ -394,14 +397,14 @@
       </div>
 
       <div class="swiper-slide red-slide swiper-slide-next">
-        <div class="wrap bg7">
+        <div class="wrap bg7 swiper-lazy" data-background="./images/07/bg.png">
           <!--男-->
-          <!-- <div class="type-wrap">
-            <div class="type man"></div>
+          <!-- <div class="type-wrap swiper-lazy" data-background="./images/07/01.png">
+            <div class="type man swiper-lazy" data-background="./images/12/man.png"></div>
           </div> -->
           <!--女-->
-          <div class="type-wrap">
-            <div class="type woman"></div>
+          <div class="type-wrap swiper-lazy" data-background="./images/07/01.png">
+            <div class="type woman swiper-lazy" data-background="./images/12/woman.png"></div>
           </div>
           <div class="bg1-inner">
             <p class="ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="0.7s"
@@ -425,15 +428,15 @@
       </div>
       <!--无消费-->
       <div class="swiper-slide red-slide swiper-slide-next">
-        <div class="wrap bg7">
+        <div class="wrap bg7 swiper-lazy" data-background="./images/07/bg.png">
           <!--男-->
-          <!-- <div class="type-wrap">
-            <div class="type man"></div>
+          <!-- <div class="type-wrap swiper-lazy" data-background="./images/07/01.png">
+            <div class="type man swiper-lazy" data-background="./images/12/man.png"></div>
           </div> -->
-          <!--女-->
-          <div class="type-wrap">
-            <div class="type woman"></div>
-          </div>
+         <!--女-->
+         <div class="type-wrap swiper-lazy" data-background="./images/07/01.png">
+          <div class="type woman swiper-lazy" data-background="./images/12/woman.png"></div>
+        </div>
           <div class="bg1-inner">
             <p class="ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="0.7s"
               swiper-animate-delay="0.2s">
@@ -459,6 +462,7 @@
 
       <div class="swiper-slide index-slide swiper-slide-active">
         <div class="wrap bg8">
+          <img data-src="./images/13/bg.gif" class="swiper-lazy"/>
           <div class="bg1-inner">
             <p class="ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="0.7s"
               swiper-animate-delay="0.3s">
@@ -486,6 +490,7 @@
       <!--无消费-->
       <div class="swiper-slide index-slide swiper-slide-active">
         <div class="wrap bg8">
+          <img data-src="./images/13/bg.gif" class="swiper-lazy"/>
           <div class="bg1-inner">
             <p class="ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="0.7s"
               swiper-animate-delay="0.3s">
@@ -512,6 +517,7 @@
 
       <div class="swiper-slide index-slide swiper-slide-active">
         <div class="wrap bg9">
+          <img data-src="./images/15/bg.gif" class="swiper-lazy"/>
           <div class="bg1-inner">
             <p class="ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="0.7s"
               swiper-animate-delay="0.3s">
@@ -539,6 +545,7 @@
       <!--无消费-->
       <div class="swiper-slide index-slide swiper-slide-active">
         <div class="wrap bg9">
+          <img data-src="./images/15/bg.gif" class="swiper-lazy"/>
           <div class="bg1-inner">
             <p class="ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="0.7s"
               swiper-animate-delay="0.3s">
@@ -569,7 +576,7 @@
       </div>
 
       <div class="swiper-slide red-slide swiper-slide-next">
-        <div class="wrap bg10">
+        <div class="wrap bg10 swiper-lazy" data-background="./images/17/bg.png">
           <div class="person-wrap">
             <div class="person ani" swiper-animate-effect="zoomIn" swiper-animate-duration="0.7s"
               swiper-animate-delay="0.5s">
@@ -625,15 +632,14 @@
 
       <div class="swiper-slide index-slide swiper-slide-active">
         <div class="wrap bg11">
+          <img data-src="./images/01/bg.gif" class="swiper-lazy"/>
           <div class="bg11-1"></div>
           <div class="bg11-2"></div>
-          <div class="success"></div>
-          <div class="button">
+          <div class="success swiper-lazy" data-background="./images/18/success.png"></div>
+          <div class="button swiper-lazy" data-background="./images/18/lingqu.png">
             <button class="lingqu"></button>
           </div>
-          <div class="button new">
-            <button class="lingqu"></button>
-          </div>
+          <div class="success new swiper-lazy" data-background="./images/18/new.png"></div>
         </div>
       </div>
 
@@ -714,9 +720,9 @@
       //Swiper5
       var mySwiper = new Swiper('.swiper-container', {
         direction: 'vertical',
-        lazyLoading: true,//懒
-        lazyLoadingInPrevNext: true,//懒
-        lazyLoadingInPrevNextAmount: 3,//提前两张加载
+        lazy: {
+          loadPrevNext: true,
+        },
         on: {
           init: function () {
             swiperAnimateCache(this);

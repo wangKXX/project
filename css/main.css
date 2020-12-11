@@ -17,7 +17,20 @@ html .swiper-container .swiper-slide {
 
 body .swiper-container .swiper-slide .bg1,
 html .swiper-container .swiper-slide .bg1 {
-  background: url(../images/04/bg.gif) no-repeat;
+  background-repeat: no-repeat;
+}
+
+body .swiper-container .swiper-slide .bg1::after,
+html .swiper-container .swiper-slide .bg1::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 4rem;
+  animation: blingColor 2s infinite;
+  -webkit-animation: blingColor 2s infinite;
+  content: " ";
+  transition: all 2s ease-in-out;
 }
 
 body .swiper-container .swiper-slide .bg1 .bg1-inner,
@@ -31,7 +44,7 @@ html .swiper-container .swiper-slide .bg1 .bg1-inner {
 
 body .swiper-container .swiper-slide .bg2,
 html .swiper-container .swiper-slide .bg2 {
-  background: url(../images/05/bg.png) no-repeat;
+  background-repeat: no-repeat;
 }
 
 body .swiper-container .swiper-slide .bg2 .person-wrap,
@@ -67,7 +80,20 @@ html .swiper-container .swiper-slide .bg2 .bg1-inner {
 
 body .swiper-container .swiper-slide .bg10,
 html .swiper-container .swiper-slide .bg10 {
-  background: url(../images/17/bg.gif) no-repeat;
+  background-repeat: no-repeat;
+}
+
+body .swiper-container .swiper-slide .bg10::after,
+html .swiper-container .swiper-slide .bg10::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  animation: blingColor 2s infinite;
+  -webkit-animation: blingColor 2s infinite;
+  content: " ";
+  transition: all 2s ease-in-out;
 }
 
 body .swiper-container .swiper-slide .bg10 .person-wrap,
@@ -84,7 +110,8 @@ body .swiper-container .swiper-slide .bg10 .person,
 html .swiper-container .swiper-slide .bg10 .person {
   width: 100%;
   height: 100%;
-  background: url(../images/17/person.png) no-repeat;
+  background: url("../images/17/person.png");
+  background-repeat: no-repeat;
   background-size: 100% 100%;
 }
 
@@ -92,7 +119,8 @@ body .swiper-container .swiper-slide .bg10 .woman,
 html .swiper-container .swiper-slide .bg10 .woman {
   width: 100%;
   height: 100%;
-  background: url(../images/17/woman.png) no-repeat;
+  background: url("../images/17/woman.png");
+  background-repeat: no-repeat;
   background-size: 100% 100%;
 }
 
@@ -123,7 +151,20 @@ html .swiper-container .swiper-slide .bg10 .bg2-inner .margin {
 
 body .swiper-container .swiper-slide .bg3,
 html .swiper-container .swiper-slide .bg3 {
-  background: url(../images/07/bg.gif) no-repeat;
+  background-repeat: no-repeat;
+}
+
+body .swiper-container .swiper-slide .bg3::after,
+html .swiper-container .swiper-slide .bg3::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  animation: blingColor 2s infinite;
+  -webkit-animation: blingColor 2s infinite;
+  content: " ";
+  transition: all 2s ease-in-out;
 }
 
 body .swiper-container .swiper-slide .bg3 .type-wrap,
@@ -134,7 +175,7 @@ html .swiper-container .swiper-slide .bg3 .type-wrap {
   width: 100%;
   height: 100%;
   z-index: 1;
-  background: url(../images/07/01.png) no-repeat;
+  background-repeat: no-repeat;
   background-size: 100% 100%;
   -webkit-animation: bling 2s infinite;
   animation: bling 2s infinite;
@@ -144,25 +185,25 @@ body .swiper-container .swiper-slide .bg3 .type-wrap .type,
 html .swiper-container .swiper-slide .bg3 .type-wrap .type {
   width: 100%;
   height: 100%;
-  background: url(../images/06/fushi.png) no-repeat;
+  background-repeat: no-repeat;
   background-size: 100% 100%;
 }
 
 body .swiper-container .swiper-slide .bg3 .type-wrap .family,
 html .swiper-container .swiper-slide .bg3 .type-wrap .family {
-  background: url(../images/07/family.png) no-repeat;
+  background-repeat: no-repeat;
   background-size: 100% 100%;
 }
 
 body .swiper-container .swiper-slide .bg3 .type-wrap .sport,
 html .swiper-container .swiper-slide .bg3 .type-wrap .sport {
-  background: url(../images/08/sport.png) no-repeat;
+  background-repeat: no-repeat;
   background-size: 100% 100%;
 }
 
 body .swiper-container .swiper-slide .bg3 .type-wrap .zhubao,
 html .swiper-container .swiper-slide .bg3 .type-wrap .zhubao {
-  background: url(../images/09/zhubao.png) no-repeat;
+  background-repeat: no-repeat;
   background-size: 100% 100%;
 }
 
@@ -176,9 +217,10 @@ html .swiper-container .swiper-slide .bg3 .bg1-inner {
   z-index: 2;
 }
 
-body .swiper-container .swiper-slide .bg4,
-html .swiper-container .swiper-slide .bg4 {
-  background: url(../images/10/bg.gif) no-repeat;
+body .swiper-container .swiper-slide .bg4 img,
+html .swiper-container .swiper-slide .bg4 img {
+  width: 100%;
+  height: 100%;
 }
 
 body .swiper-container .swiper-slide .bg4 .bg1-inner,
@@ -190,9 +232,10 @@ html .swiper-container .swiper-slide .bg4 .bg1-inner {
   background: rgba(255, 255, 255, 0.6);
 }
 
-body .swiper-container .swiper-slide .bg8,
-html .swiper-container .swiper-slide .bg8 {
-  background: url(../images/13/bg.gif) no-repeat;
+body .swiper-container .swiper-slide .bg8 img,
+html .swiper-container .swiper-slide .bg8 img {
+  width: 100%;
+  height: 100%;
 }
 
 body .swiper-container .swiper-slide .bg8 .bg1-inner,
@@ -204,9 +247,10 @@ html .swiper-container .swiper-slide .bg8 .bg1-inner {
   background: rgba(255, 255, 255, 0.6);
 }
 
-body .swiper-container .swiper-slide .bg9,
-html .swiper-container .swiper-slide .bg9 {
-  background: url(../images/15/bg.gif) no-repeat;
+body .swiper-container .swiper-slide .bg9 img,
+html .swiper-container .swiper-slide .bg9 img {
+  width: 100%;
+  height: 100%;
 }
 
 body .swiper-container .swiper-slide .bg9 .bg1-inner,
@@ -223,9 +267,10 @@ html .swiper-container .swiper-slide .bg9 .bg1-inner .margin {
   margin-top: 0.166667rem;
 }
 
-body .swiper-container .swiper-slide .bg11,
-html .swiper-container .swiper-slide .bg11 {
-  background: url(../images/18/bg.gif) no-repeat;
+body .swiper-container .swiper-slide .bg11 img,
+html .swiper-container .swiper-slide .bg11 img {
+  width: 100%;
+  height: 100%;
 }
 
 body .swiper-container .swiper-slide .bg11 .success,
@@ -236,7 +281,7 @@ html .swiper-container .swiper-slide .bg11 .success {
   right: 50%;
   margin-right: -4.3466666rem;
   height: 5.6rem;
-  background: url(../images/18/success.png) no-repeat;
+  background-repeat: no-repeat;
   background-size: 100% 100%;
   display: none;
 }
@@ -249,7 +294,7 @@ html .swiper-container .swiper-slide .bg11 .button {
   right: 50%;
   margin-right: -4.3466666rem;
   height: 5.6rem;
-  background: url(../images/18/lingqu.png) no-repeat;
+  background-repeat: no-repeat;
   background-size: 100% 100%;
 }
 
@@ -267,35 +312,14 @@ html .swiper-container .swiper-slide .bg11 .button .lingqu {
 
 body .swiper-container .swiper-slide .bg11 .new,
 html .swiper-container .swiper-slide .bg11 .new {
-  background: url(../images/18/new.png) no-repeat;
+  background-repeat: no-repeat;
   background-size: 100% 100%;
 }
 
-body .swiper-container .swiper-slide .bg11 .bg11-1,
-html .swiper-container .swiper-slide .bg11 .bg11-1 {
-  position: absolute;
-  top: 0;
-  left: 0;
+body .swiper-container .swiper-slide .bg5 img,
+html .swiper-container .swiper-slide .bg5 img {
   width: 100%;
   height: 100%;
-  background: url(../images/18/bg2.gif) no-repeat;
-  background-size: 100% 100%;
-}
-
-body .swiper-container .swiper-slide .bg11 .bg11-2,
-html .swiper-container .swiper-slide .bg11 .bg11-2 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: url(../images/18/bg3.gif) no-repeat;
-  background-size: 100% 100%;
-}
-
-body .swiper-container .swiper-slide .bg5,
-html .swiper-container .swiper-slide .bg5 {
-  background: url(../images/11/bg1.gif) no-repeat;
 }
 
 body .swiper-container .swiper-slide .bg5 .bg1-inner,
@@ -307,9 +331,10 @@ html .swiper-container .swiper-slide .bg5 .bg1-inner {
   background: rgba(255, 255, 255, 0.6);
 }
 
-body .swiper-container .swiper-slide .bg6,
-html .swiper-container .swiper-slide .bg6 {
-  background: url(../images/11/bg2.gif) no-repeat;
+body .swiper-container .swiper-slide .bg6 img,
+html .swiper-container .swiper-slide .bg6 img {
+  width: 100%;
+  height: 100%;
 }
 
 body .swiper-container .swiper-slide .bg6 .bg1-inner,
@@ -323,7 +348,20 @@ html .swiper-container .swiper-slide .bg6 .bg1-inner {
 
 body .swiper-container .swiper-slide .bg7,
 html .swiper-container .swiper-slide .bg7 {
-  background: url(../images/12/bg.gif) no-repeat;
+  background-repeat: no-repeat;
+}
+
+body .swiper-container .swiper-slide .bg7::after,
+html .swiper-container .swiper-slide .bg7::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  animation: blingColor 2s infinite;
+  -webkit-animation: blingColor 2s infinite;
+  content: " ";
+  transition: all 2s ease-in-out;
 }
 
 body .swiper-container .swiper-slide .bg7 .type-wrap,
@@ -334,7 +372,7 @@ html .swiper-container .swiper-slide .bg7 .type-wrap {
   width: 100%;
   height: 100%;
   z-index: 1;
-  background: url(../images/07/01.png) no-repeat;
+  background-repeat: no-repeat;
   background-size: 100% 100%;
   -webkit-animation: bling 2s infinite;
   animation: bling 2s infinite;
@@ -344,7 +382,7 @@ body .swiper-container .swiper-slide .bg7 .type-wrap .man,
 html .swiper-container .swiper-slide .bg7 .type-wrap .man {
   width: 100%;
   height: 100%;
-  background: url(../images/12/man.png) no-repeat;
+  background-repeat: no-repeat;
   background-size: 100% 100%;
 }
 
@@ -352,7 +390,7 @@ body .swiper-container .swiper-slide .bg7 .type-wrap .woman,
 html .swiper-container .swiper-slide .bg7 .type-wrap .woman {
   width: 100%;
   height: 100%;
-  background: url(../images/12/woman.png) no-repeat;
+  background-repeat: no-repeat;
   background-size: 100% 100%;
 }
 
@@ -439,6 +477,30 @@ html .swiper-container .swiper-slide .wrap {
   }
   100% {
     opacity: 1;
+  }
+}
+
+@-webkit-keyframes blingColor {
+  0% {
+    background-color: rgba(255, 255, 255, 0);
+  }
+  50% {
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+  100% {
+    background-color: rgba(255, 255, 255, 0);
+  }
+}
+
+@keyframes blingColor {
+  0% {
+    background-color: rgba(255, 255, 255, 0);
+  }
+  50% {
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+  100% {
+    background-color: rgba(255, 255, 255, 0);
   }
 }
 
@@ -729,4 +791,74 @@ header img {
   right: 2.266667rem;
   transform: rotate(-14deg);
   -webkit-transform: rotate(-14deg);
+}
+
+@-webkit-keyframes bling {
+  0% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0.7;
+  }
+  50% {
+    opacity: 0.7;
+  }
+  75% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes bling {
+  0% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0.7;
+  }
+  50% {
+    opacity: 0.7;
+  }
+  75% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes shack {
+  0% {
+    left: 0;
+    top: 0;
+  }
+  25% {
+    left: 25%;
+    top: 25%;
+  }
+  50% {
+    left: 50%;
+    top: 50%;
+  }
+  75% {
+    left: 75%;
+    top: 75%;
+  }
+  100% {
+    left: 100%;
+    top: 100%;
+  }
+}
+
+@keyframes shack {
+  0% {
+    left: 0;
+    top: 0;
+  }
+  100% {
+    left: 100%;
+    top: 100%;
+  }
 }

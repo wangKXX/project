@@ -11,8 +11,18 @@ html {
       height: 100%;
 
       .bg1 {
-        background: url(../images/04/bg.gif) no-repeat;
-
+        background-repeat: no-repeat;
+        &::after {
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 100%;
+          height: 4rem;
+          animation: blingColor 2s infinite;
+          -webkit-animation: blingColor 2s infinite;
+          content: " ";
+          transition: all 2s ease-in-out;
+        }
         .bg1-inner {
           position: absolute;
           top: 3.226667rem;
@@ -23,8 +33,7 @@ html {
       }
 
       .bg2 {
-        background: url(../images/05/bg.png) no-repeat;
-
+        background-repeat: no-repeat;
         .person-wrap {
           width: 6.733333rem;
           height: 14.43333rem;
@@ -53,8 +62,18 @@ html {
       }
 
       .bg10 {
-        background: url(../images/17/bg.gif) no-repeat;
-
+        background-repeat: no-repeat;
+        &::after {
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 100%;
+          height: 100%;
+          animation: blingColor 2s infinite;
+          -webkit-animation: blingColor 2s infinite;
+          content: " ";
+          transition: all 2s ease-in-out;
+        }
         .person-wrap {
           width: 100%;
           height: 100%;
@@ -67,13 +86,15 @@ html {
         .person {
           width: 100%;
           height: 100%;
-          background: url(../images/17/person.png) no-repeat;
+          background: url("../images/17/person.png");
+          background-repeat: no-repeat;
           background-size: 100% 100%;
         }
         .woman {
           width: 100%;
           height: 100%;
-          background: url(../images/17/woman.png) no-repeat;
+          background: url("../images/17/woman.png");
+          background-repeat: no-repeat;;
           background-size: 100% 100%;
         }
 
@@ -99,7 +120,18 @@ html {
       }
 
       .bg3 {
-        background: url(../images/07/bg.gif) no-repeat;
+        background-repeat: no-repeat;
+        &::after {
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 100%;
+          height: 100%;
+          animation: blingColor 2s infinite;
+          -webkit-animation: blingColor 2s infinite;
+          content: " ";
+          transition: all 2s ease-in-out;
+        }
         .type-wrap {
           position: absolute;
           top: 0;
@@ -107,26 +139,26 @@ html {
           width: 100%;
           height: 100%;
           z-index: 1;
-          background: url(../images/07/01.png) no-repeat;
+          background-repeat: no-repeat;;
           background-size: 100% 100%;
           -webkit-animation: bling 2s infinite;
           animation: bling 2s infinite;
           .type {
             width: 100%;
             height: 100%;
-            background: url(../images/06/fushi.png) no-repeat;
+            background-repeat: no-repeat;
             background-size: 100% 100%;
           }
           .family {
-            background: url(../images/07/family.png) no-repeat;
+            background-repeat: no-repeat;
             background-size: 100% 100%;
           }
           .sport {
-            background: url(../images/08/sport.png) no-repeat;
+            background-repeat: no-repeat;
             background-size: 100% 100%;
           }
           .zhubao {
-            background: url(../images/09/zhubao.png) no-repeat;
+            background-repeat: no-repeat;
             background-size: 100% 100%;
           }
         }
@@ -141,7 +173,10 @@ html {
       }
 
       .bg4 {
-        background: url(../images/10/bg.gif) no-repeat;
+        img{
+          width: 100%;
+          height: 100%;
+        }
         .bg1-inner {
           position: absolute;
           top: 2.226667rem;
@@ -152,7 +187,10 @@ html {
       }
 
       .bg8 {
-        background: url(../images/13/bg.gif) no-repeat;
+        img{
+          width: 100%;
+          height: 100%;
+        }
         .bg1-inner {
           position: absolute;
           top: 2.226667rem;
@@ -162,7 +200,10 @@ html {
         }
       }
       .bg9 {
-        background: url(../images/15/bg.gif) no-repeat;
+        img{
+          width: 100%;
+          height: 100%;
+        }
         .bg1-inner {
           position: absolute;
           top: 2.226667rem;
@@ -175,7 +216,10 @@ html {
         }
       }
       .bg11 {
-        background: url(../images/18/bg.gif) no-repeat;
+        img{
+          width: 100%;
+          height: 100%;
+        }
         .success {
           width: 8.693333rem;
           bottom: 1.533333rem;
@@ -183,7 +227,7 @@ html {
           right: 50%;
           margin-right: -4.3466666rem;
           height: 5.6rem;
-          background: url(../images/18/success.png) no-repeat;
+          background-repeat: no-repeat;
           background-size: 100% 100%;
           display: none;
         }
@@ -194,7 +238,7 @@ html {
           right: 50%;
           margin-right: -4.3466666rem;
           height: 5.6rem;
-          background: url(../images/18/lingqu.png) no-repeat;
+          background-repeat: no-repeat;
           background-size: 100% 100%;
           .lingqu {
             position: absolute;
@@ -207,43 +251,17 @@ html {
             z-index: 3;
           }
         }
-        .new{
-          background: url(../images/18/new.png) no-repeat;
+        .new {
+          background-repeat: no-repeat;
           background-size: 100% 100%;
         }
-        .bg11-1 {
-          position: absolute;
-          top: 0;
-          left: 0;
-          width: 100%;
-          height: 100%;
-          background: url(../images/18/bg2.gif) no-repeat;
-          background-size: 100% 100%;
-        }
-        .bg11-2 {
-          position: absolute;
-          top: 0;
-          left: 0;
-          width: 100%;
-          height: 100%;
-          background: url(../images/18/bg3.gif) no-repeat;
-          background-size: 100% 100%;
-        }
-        // .text {
-        //   position: absolute;
-        //   width: 7.866667rem;
-        //   top: 2.226667rem;
-        //   right: 50%;
-        //   margin-right: -3.933333rem;
-        //   img{
-        //     width: 100%;
-        //     animation: bling 2s infinite;
-        //   }
-        // }
       }
 
       .bg5 {
-        background: url(../images/11/bg1.gif) no-repeat;
+        img{
+          width: 100%;
+          height: 100%;
+        }
         .bg1-inner {
           position: absolute;
           top: 2.226667rem;
@@ -253,7 +271,10 @@ html {
         }
       }
       .bg6 {
-        background: url(../images/11/bg2.gif) no-repeat;
+        img{
+          width: 100%;
+          height: 100%;
+        }
         .bg1-inner {
           position: absolute;
           top: 2.226667rem;
@@ -264,7 +285,18 @@ html {
       }
 
       .bg7 {
-        background: url(../images/12/bg.gif) no-repeat;
+        background-repeat: no-repeat;
+        &::after {
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 100%;
+          height: 100%;
+          animation: blingColor 2s infinite;
+          -webkit-animation: blingColor 2s infinite;
+          content: " ";
+          transition: all 2s ease-in-out;
+        }
         .type-wrap {
           position: absolute;
           top: 0;
@@ -272,20 +304,20 @@ html {
           width: 100%;
           height: 100%;
           z-index: 1;
-          background: url(../images/07/01.png) no-repeat;
+          background-repeat: no-repeat;
           background-size: 100% 100%;
           -webkit-animation: bling 2s infinite;
           animation: bling 2s infinite;
           .man {
             width: 100%;
             height: 100%;
-            background: url(../images/12/man.png) no-repeat;
+            background-repeat: no-repeat;
             background-size: 100% 100%;
           }
           .woman {
             width: 100%;
             height: 100%;
-            background: url(../images/12/woman.png) no-repeat;
+            background-repeat: no-repeat;
             background-size: 100% 100%;
           }
         }
@@ -374,6 +406,30 @@ html {
   }
   100% {
     opacity: 1;
+  }
+}
+
+@-webkit-keyframes blingColor {
+  0% {
+    background-color: rgba(255, 255, 255, 0);
+  }
+  50% {
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+  100% {
+    background-color: rgba(255, 255, 255, 0);
+  }
+}
+
+@keyframes blingColor {
+  0% {
+    background-color: rgba(255, 255, 255, 0);
+  }
+  50% {
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+  100% {
+    background-color: rgba(255, 255, 255, 0);
   }
 }
 
@@ -630,4 +686,72 @@ header {
   right: 2.266667rem;
   transform: rotate(-14deg);
   -webkit-transform: rotate(-14deg);
+}
+
+@-webkit-keyframes bling {
+  0% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0.7;
+  }
+  50% {
+    opacity: 0.7;
+  }
+  75% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes bling {
+  0% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0.7;
+  }
+  50% {
+    opacity: 0.7;
+  }
+  75% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes shack {
+  0% {
+    left: 0;
+    top: 0;
+  }
+  25% {
+    left: 25%;
+    top: 25%;
+  }
+  50% {
+    left: 50%;
+    top: 50%;
+  }
+  75% {
+    left: 75%;
+    top: 75%;
+  }
+  100% {
+    left: 100%;
+    top: 100%;
+  }
+}
+@keyframes shack {
+  0% {
+    left: 0;
+    top: 0;
+  }
+  100% {
+    left: 100%;
+    top: 100%;
+  }
 }
