@@ -48,13 +48,12 @@
   <script type="text/javascript">
   $(".loding").show();
    var prvImages = [
-   "./images/11/bg2.gif",
-   "./images/11/bg1.gif",
-  "./images/13/bg.gif",
-  "./images/15/bg.gif",
-  "./images/01/bg.gif",
-  "./images/10/bg.gif"
-
+    "./images/11/bg2.gif",
+    "./images/11/bg1.gif",
+    "./images/13/bg.gif",
+    "./images/15/bg.gif",
+    "./images/01/bg.gif",
+    "./images/10/bg.gif"
    ]
    $('.loding-txt').text("2015");
    var loader = new resLoader({
@@ -65,7 +64,6 @@
 	onProgress : function(current, total){
     var percent = current/total*100;
     $('.loding-txt').text( Math.floor(percent/20) + 2015);
-    console.log(Math.floor(percent/20) + 2015)
 		$('.progressbar').css('width', percent+'%');
 	},
 	onComplete : function(total){
@@ -183,7 +181,7 @@ loader.start();
 
       <div class="swiper-slide index-slide swiper-slide-active birthday">
         <div class="wrap bg4">
-          <img data-src="./images/10/bg.gif" class="swiper-lazy">
+          <img src="./images/10/bg.gif">
           <div class="bg1-inner">
             <p class="ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="0.7s"
               swiper-animate-delay="0.3s">
@@ -208,7 +206,7 @@ loader.start();
 
       <div class="swiper-slide index-slide swiper-slide-active qiche">
         <div class="wrap bg6">
-          <img data-src="./images/11/bg2.gif" class="swiper-lazy"/>
+          <img src="./images/11/bg2.gif"/>
           <!--服装类-->
           <div class="l-v fushi1">
             <div class="person ani" swiper-animate-effect="zoomIn" swiper-animate-duration="0.7s"
@@ -386,7 +384,7 @@ loader.start();
       <!---无消费会员-->
       <div class="swiper-slide index-slide swiper-slide-active">
         <div class="wrap bg5">
-          <img data-src="./images/11/bg1.gif" class="swiper-lazy"/>
+          <img src="./images/11/bg1.gif"/>
           <div class="bg1-inner">
             <p class="ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="0.7s"
               swiper-animate-delay="0.3s">
@@ -475,7 +473,7 @@ loader.start();
 
       <div class="swiper-slide index-slide swiper-slide-active">
         <div class="wrap bg8">
-          <img data-src="./images/13/bg.gif" class="swiper-lazy"/>
+          <img src="./images/13/bg.gif"/>
           <div class="bg1-inner">
             <p class="ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="0.7s"
               swiper-animate-delay="0.3s">
@@ -503,7 +501,7 @@ loader.start();
       <!--无消费-->
       <div class="swiper-slide index-slide swiper-slide-active">
         <div class="wrap bg8">
-          <img data-src="./images/13/bg.gif" class="swiper-lazy"/>
+          <img src="./images/13/bg.gif"/>
           <div class="bg1-inner">
             <p class="ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="0.7s"
               swiper-animate-delay="0.3s">
@@ -530,7 +528,7 @@ loader.start();
 
       <div class="swiper-slide index-slide swiper-slide-active">
         <div class="wrap bg9">
-          <img data-src="./images/15/bg.gif" class="swiper-lazy"/>
+          <img src="./images/15/bg.gif"/>
           <div class="bg1-inner">
             <p class="ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="0.7s"
               swiper-animate-delay="0.3s">
@@ -558,7 +556,7 @@ loader.start();
       <!--无消费-->
       <div class="swiper-slide index-slide swiper-slide-active">
         <div class="wrap bg9">
-          <img data-src="./images/15/bg.gif" class="swiper-lazy"/>
+          <img src="./images/15/bg.gif"/>
           <div class="bg1-inner">
             <p class="ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="0.7s"
               swiper-animate-delay="0.3s">
@@ -645,7 +643,7 @@ loader.start();
 
       <div class="swiper-slide index-slide swiper-slide-active">
         <div class="wrap bg11">
-          <img data-src="./images/01/bg.gif" class="swiper-lazy"/>
+          <img src="./images/01/bg.gif"/>
           <div class="bg11-1"></div>
           <div class="bg11-2"></div>
           <div class="success swiper-lazy" data-background="./images/18/success.png"></div>
