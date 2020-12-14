@@ -51,7 +51,6 @@
    "./images/11/bg2.gif",
    "./images/11/bg1.gif",
   "./images/13/bg.gif",
-  "./images/13/bg.gif",
   "./images/15/bg.gif",
   "./images/01/bg.gif",
   "./images/10/bg.gif"
@@ -65,12 +64,12 @@
 	},
 	onProgress : function(current, total){
     var percent = current/total*100;
-    $('.loding-txt').text( Math.floor(100 / (100 - percent)) + 2015);
-    console.log(Math.floor(100 / (100 - percent)) + 2015)
+    $('.loding-txt').text( Math.floor(percent/20) + 2015);
+    console.log(Math.floor(percent/20) + 2015)
 		$('.progressbar').css('width', percent+'%');
 	},
 	onComplete : function(total){
-    // $(".loding").hide();
+    $(".loding").hide();
     $('.loding-txt').text(2020);
 	}
 });
